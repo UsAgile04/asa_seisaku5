@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charaset='utf-8'>
+    <meta content='width=device-width,initial-scale=1.0,user-scalable=no' name='viewport'>
+    <title>coten | 日常のオトモ</title>
+    <meta name="description" content="日常のオトモは、ただの生活雑貨を過度におしゃれに紹介する、遊びも兼ねた課題制作サイトです" />
+    <meta name="keywords" content="個展, 写真展, カメラ, sns, 生活雑貨, 課題制作," />
+    <meta name="viewport" content="width=device-width">
+
+    <!--property属性 ：SNSでシェアされたときに表示するサイト情報の指定。
+    OGP設定と呼び、FacebookなどSNSの共有（シェア）効果を高める。SNSでの集客効果。-->
+    <!-- サイトタイプ-->
+    <meta property="og:type" content="website" />
+    <!-- ページタイトル-->
+    <meta property="og:title" content="日常のオトモ" />
+    <!-- ページの概要-->
+    <meta property="og:description" content="生活雑貨のおしゃれ写真集、紹介　授業課題も兼ねる" />
+    <!-- サイト名-->
+    <meta property="og:site_name" content="coten" />
+    <!-- ページのURL-->
+    <meta property="og:url" content="https://coten.pics/" />
+    <!-- サイトのアイコン画像-->
+    <meta property="og:image" content="https://coten.pics/images/img_main01.jpg" />
+    <!-- フェイスブック共有情報   <meta property="fb:app_id" content="1684914615163108" />-->
+
+
+    <!-- アイコンに関する記述。やはりfavicon。 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+</head>
+
+<body class=''>
+    <div id='wrapper'>
+
+        <header class='' id='header'>
+            <div class='head__wrap lp-head'>
+                <div class='head__logo-wrap'>
+                    <h1 class='head__logo'>
+                        <a class="head__logo-link" href="/">
+                            <!-- トップページへのリンク -->
+                            <div class='txt'>日常のオトモ</div>
+                            <div class='svg icon-svg_logo'></div><!-- サイトのロゴ画像 -->
+                        </a></h1>
+                </div>
+
+                <div class='head__btns'>
+                    <!-- ヘッダーの機能ボタン -->
+                    <div class='head__btns-discover'>
+                        <!-- 検索ボタンの見かけについて -->
+                        <div class='head__btns-discover-in cmn__dropdown-btn head__ico-btn'>
+                            <p class='txt'>検索</p>
+                            <div class='icon-svg_discover svg'></div><!-- 検索ボタンの画像 -->
+                        </div>
+                    </div>
+
+                    <!-- 検索ボタンの中身（アコーディオンメニュー）について -->
+                    <div class='head__discover-dropdown cmn__dropdown-wrap' id='discoverDropdown'>
+
+                        <dl class='exhibition head__discover-dropdown-box'>
+                            <!-- 上段 -->
+                            <dt class='head__discover-dropdown-lbl'>テキスト</dt>
+                            <dd class='head__discover-dropdown-links-wrap'>
+                                <ul class='head__discover-dropdown-links'>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/exhibitions/editors">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/exhibitions/popular">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/exhibitions/fresh">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/exhibitions/closing">テキスト</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <dl class='book head__discover-dropdown-box'>
+                            <!-- 中段 -->
+                            <dt class='head__discover-dropdown-lbl'>テキスト</dt>
+                            <dd class='head__discover-dropdown-links-wrap'>
+                                <ul class='head__discover-dropdown-links'>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/books/editors">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/books/popular">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/books/fresh">テキスト</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <dl class='event head__discover-dropdown-box'>
+                            <!-- 下段 -->
+                            <dt class='head__discover-dropdown-lbl'>テキスト</dt>
+                            <dd class='head__discover-dropdown-links-wrap'>
+                                <ul class='head__discover-dropdown-links'>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/events/popular">テキスト</a>
+                                    </li>
+                                    <li class='head__discover-dropdown-link-wrap'>
+                                        <a class="head__discover-dropdown-link " href="/events/fresh">テキスト</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                    </div>
+
+                    <!-- ユーザーメニュー（ハンバーガーメニュー） -->
+                    <div class='head__btns-menu head__ico-btn' onclick='showUserMenu()'>
+                        <div class='svg icon-svg_hamburger'></div>　
+                    </div>
+                    <div class='head__user-menu-wrap' id='userMenu'>　
+                        <!-- ユーザーメニューのアイコン -->
+                        <div class='head__user-menu' onclick='event.stopPropagation()'>
+                            <div class='head__user-menu-close-wrap'>　
+                                <!-- 開いたユーザーメニューを閉じるボタン -->
+                                <div class='head__user-menu-close icon-svg_close' onclick='hideVisibleDropdowns()'></div>　
+                                <!-- 開いたユーザーメニューを閉じる、✖のアイコン -->
+                            </div>
+                            <ul class='head__user-menu-links'>
+                                <li class='head__user-menu-link-wrap'>
+                                    <!-- ユーザーメニュー上段 -->
+                                    <a class="head__user-menu-link  signup" href="/users/sign_up">新規登録</a>
+                                </li>
+                                <li class='head__user-menu-link-wrap'>
+                                    <a class="head__user-menu-link releases" href="/releases">お知らせ</a>
+                                </li>
+                                <li class='head__user-menu-link-wrap with-num'>
+                                    <a class="head__user-menu-link contests" href="/contests">コンテスト
+                                        <div class='head__user-menu-contest-lbl-wrap'>
+                                            <div class='completed head__user-menu-contest-lbl'>
+                                                結果発表
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                            <ul class='head__user-menu-subs'>　
+                                <!-- ユーザーメニュー下段 -->
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub intro-book" href="/introductions">cotenとは</a>
+                                </li>
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub intro-purchase" href="/introductions/purchase">購入について</a>
+                                </li>
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub support" href="/support">サポート・お問い合わせ</a>
+                                </li>
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub terms" href="/terms">利用規約</a>
+                                </li>
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub privacy" href="/privacy">プライバシーポリシー</a>
+                                </li>
+                                <li class='head__user-menu-sub-wrap'>
+                                    <a class="head__user-menu-sub commerce" href="/commerce">特定商取引法に基づく表示</a>
+                                </li>
+                            </ul>
+                            <div class='head__user-menu-btm'>
+                                <!-- ユーザーメニュー最下段の、アイコンメニュー -->
+                                <ul class='head__user-menu-sns'>
+                                    <li class='head__user-menu-sns-btn-wrap'>
+                                        <a target="_blank" class="head__user-menu-sns-btn twt" href="https://twitter.com/CotenPics">
+                                            <p class='txt'>twitter</p>
+                                            <div class='svg icon-svg_twt'></div>
+                                        </a></li>
+                                    <li class='head__user-menu-sns-btn-wrap'>
+                                        <a target="_blank" class="head__user-menu-sns-btn inst" href="https://www.instagram.com/coten.pics/">
+                                            <p class='txt'>instagram</p>
+                                            <div class='svg icon-svg_inst'></div>
+                                        </a></li>
+                                    <li class='head__user-menu-sns-btn-wrap'>
+                                        <a target="_blank" class="head__user-menu-sns-btn fb" href="https://www.facebook.com/CotenPics-775963949235380">
+                                            <p class='txt'>facebook</p>
+                                            <div class='svg icon-svg_fb'></div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class='head__btns-box-btn signin active' onclick='userSigninModal()'>サインイン</span>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class='cmn__content-wrap lp__content-wrap'>
+            <!-- ここからメインコンテンツ -->
+
+            <section class='lp__mainimg-wrap' id='lpMainImg'>
+                <div class='lp__mainimg-txt-wrap'>
+                    <h2 class='lp__mainimg-tit'>
+                        <p class='line01'>Photo Exhibitions</p>
+                        <p class='line02'>On The Web</p>
+                    </h2>
+                    <div class='lp__mainimg-txt'>　
+                        <!-- 意識高そうなテキスト -->
+                        <p class='line'>あなたの写真に新たな活躍の場を。</p>
+                        <p class='line'>cotenは今までにない写真表現を可能にします。</p>
+                    </div>
+                    <div class='lp__mainimg-btns'>　
+                        <!-- 会員ページへ＋サービス利用（削る予定） -->
+                        <a class="lp__mainimg-btn in-out" href="/users/sign_up">cotenをはじめる</a>
+                        <a class="lp__mainimg-btn out-in" href="/exhibitions/discover">cotenを探す</a>
+                    </div>
+                    <div class='ja lp__mainimg-counter'>累計個展数 <span class='num'>4,972</span></div><!-- どこかに隠れているカウンター -->
+                </div>
+            </section>
+
+
+            <section class='lp__features'>
+                <div class='lp__features-in'>
+                    <h3 class='lp__features-tit'>coten へようこそ！</h3><!-- いい感じの見出し -->
+
+                    　
+                    <!-- サービス案内 -->
+                    <ul class='lp__features-list'>
+
+                        <li class='lp__features-list-item'>
+                            <a class="lp__features-list-img-wrap" href="/introductions/exhibition"><img class="img" alt=""
+                                    src="/images/thumb_exhibition01.jpg" />
+                                <h4 class='lp__features-list-tit'>Web個展を開催する</h4>
+                            </a>
+                            <p class='lp__features-list-txt'>個展形式でじっくりと写真を投稿し鑑賞することができるcotenでは、SNS映えを気にする必要はありません。あなたの作品の世界を、思う存分追求してください。</p>
+                        </li>
+
+                        <li class='lp__features-list-item'>
+                            <a class="lp__features-list-img-wrap" href="/introductions/book"><img class="img" alt=""
+                                    src="/images/thumb_book01.jpg" />
+                                <h4 class='lp__features-list-tit'>写真集を販売する</h4>
+                            </a>
+                            <p class='lp__features-list-txt'>cotenなら、写真を単なる画像データとしてではなく、写真集として販売することができます。自作の写真集でロイヤリティを得て、写真家としての第一歩を踏み出しましょう。</p>
+                        </li>
+
+                        <li class='lp__features-list-item'>
+                            <a class="lp__features-list-img-wrap" href="/introductions/event"><img class="img" alt=""
+                                    src="/images/thumb_event01.jpg" />
+                                <h4 class='lp__features-list-tit'>展示情報を掲載する</h4>
+                            </a>
+                            <p class='lp__features-list-txt'>Web個展に加えて、リアルの写真展を宣伝できるようになりました。cotenに集う写真好きにあなたの写真展をお知らせして、もっと多くの人々に知ってもらいましょう。</p>
+                        </li>
+                    </ul>
+                    <!-- サービス・サイト全体の説明 -->
+                    <p class='lp__features-btn'><a class="btn in-out" href="/introductions">このサイトは</a></p>
+                </div>
+            </section>
+
+
+            <section class='lp__recommend-list exhibition__list-wrap'>
+                <h3 class='lp__recommend-tit'>Webもリアルも、傑作ぞろいです。</h3>
+                <div class='lp__recommend-tabs-wrap'>
+                    <ul class='lp__recommend-tabs'>
+                        <li class='current lp__recommend-tab' id='exhbTab' onclick='transitLpTabs(0)'>Web個展</li>
+                        <li class='lp__recommend-tab' id='evntTab' onclick='transitLpTabs(1)'>展示情報</li>
+                    </ul>
+                </div>
+                <div class='exhibition__list-wrap lp__recommend-exhibition-list-wrap current' id='exhibitionListWrap'>
+                    <ul class='exhibition__list lp' id='exhibitionList'></ul>
+                    <div class='cmn__loader-wrap infinite-loader exhibits'>
+                        <div class='wavy-loader'>
+                            <div class='loader'>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='home__btm-find-more' id='lpExhbFindMore'>
+                        <a class="home__btm-find-more-btn out-in" href="/exhibitions/popular">もっと探す</a>
+                    </div>
+                </div>
+                <div class='events__list-wrap lp__recommend-event-list-wrap' id='eventListWrap'>
+                    <ul class='events__list lp'></ul>
+                    <div class='cmn__loader-wrap infinite-loader events'>
+                        <div class='wavy-loader'>
+                            <div class='loader'>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='home__btm-find-more' id='lpEvntFindMore'>
+                        <a class="home__btm-find-more-btn out-in" href="/events/popular">もっと探す</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer id='footer'>
+            <div class='cmn-modal__wrap' id='cmnModalWrap' onclick='modalHide()'>
+                <div class='cmn-modal' id='cmnModal' onclick='preventModalHide(event)'>
+                    <div class='cmn-modal__head' id='cmnModalHead'>
+                        <div class='cmn-modal__close icon-svg_close' onclick='modalHide()'></div>
+                        <div class='cmn-modal__tit' id='cmnModalTit'></div>
+                    </div>
+                    <div class='cmn-modal__body' id='cmnModalBody'>
+                        <div class='cmn-modal__error' id='cmnModalError'></div>
+                        <div class='cmn-modal__content' id='cmnModalContent'></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='noticeHashScript'>
+                <script>
+                    //<![CDATA[
+                    noticeModalHash = { "nothing": { "txt": "" } }
+
+//]]>
+                </script>
+            </div>
+            <div id='noticeModal'>
+                <div class='notice-modal__close icon-svg_close' onclick='noticeModalHide()'></div>
+                <div id='noticeModalIn'></div>
+            </div>
+            <div class='foot__pagetop' id='pagetop'>
+                <a class="foot__pagetop-btn" href="#top">
+                    <div class='svg icon-svg_arrow'></div>
+                </a></div>
+            <div class='foot__wrap'>
+                <div class='foot__menu-wrap'>
+                    <ul class='foot__menu'>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/releases">お知らせ</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/contests">コンテスト</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/introductions">cotenとは</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/introductions/purchase">購入について</a>
+                        </li>
+                        <li class='foot__menu-link-wrap view-sp'>
+                            <a class="foot__menu-link" href="/support">サポート・お問い合わせ</a>
+                        </li>
+                    </ul>
+                    <ul class='foot__sub-menu view-pc-tab'>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/support">サポート・お問い合わせ</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/terms">利用規約</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/privacy">プライバシーポリシー</a>
+                        </li>
+                        <li class='foot__menu-link-wrap'>
+                            <a class="foot__menu-link" href="/commerce">特定商取引法に基づく表示</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='foot__info-wrap'>
+                    <div class='foot__info'>
+                        <ul class='foot__info-sns'>
+                            <li class='foot__info-sns-btn-wrap'>
+                                <a target="_blank" class="foot__info-sns-btn twt" href="https://twitter.com/CotenPics">
+                                    <p class='txt'>twitter</p>
+                                    <div class='svg icon-svg_twt'></div>
+                                </a></li>
+                            <li class='foot__info-sns-btn-wrap'>
+                                <a target="_blank" class="foot__info-sns-btn inst" href="https://www.instagram.com/coten.pics/">
+                                    <p class='txt'>instagram</p>
+                                    <div class='svg icon-svg_inst'></div>
+                                </a></li>
+                            <li class='foot__info-sns-btn-wrap'>
+                                <a target="_blank" class="foot__info-sns-btn fb" href="https://www.facebook.com/CotenPics-775963949235380">
+                                    <p class='txt'>facebook</p>
+                                    <div class='svg icon-svg_fb'></div>
+                                </a></li>
+                        </ul>
+                        <div class='foot__info-logo view-pc-tab'>
+                            <a class="foot__info-logo-link" href="/">
+                                <p class='txt'>coten</p>
+                                <div class='svg icon-svg_logo'></div>
+                            </a></div>
+                    </div>
+                    <small class='foot__info-copy'>&copy; 2018 coten</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

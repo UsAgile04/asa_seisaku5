@@ -1,0 +1,397 @@
+@charset "utf-8";
+/*
+=======================================
+	Reset CSS
+=======================================
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video{
+	margin:0;
+	padding:0;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,main,menu,nav,section{
+	display:block;
+}
+
+html{
+	-webkit-text-size-adjust: 100%;
+}
+
+body{
+	color: #59220d;
+	line-height: 1.5;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+img{
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+img, input, select, textarea { 
+	vertical-align: middle;
+}
+
+a{
+	color: #59220d;
+	transition: 0.5s;
+}
+
+a:hover{
+	color: #59220d;
+}
+
+a:hover img{
+	opacity: 0.7;
+}
+/*
+=========================================
+	Base Layout
+=========================================
+*/
+/*ALL and Smart Phone*/
+.container{
+	max-width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+.container::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*
+=========================================
+	Modules（Block）
+=========================================
+*/
+
+/*header
+--------------------*/
+#header{
+	padding: 12.5%;
+	background: url(../img/bg_header.jpg) center top no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+#header:before{
+	content: "";
+	display: block;
+	width: 33.75%;
+	height: 55.5555%;
+	background: url(../img/bg_race.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: 0;
+	max-width: 220px;
+	max-height: 200px;
+}
+
+/*global navigation
+--------------------*/
+#gnav{
+	background: black;
+}
+#gnav ul{
+	overflow: hidden;
+}
+#gnav li:nth-child(1){
+	float: left;
+	width: 15%;
+	text-align: center;
+}
+#gnav li:nth-child(2){
+	float: right;
+	width: 7%;
+	text-align: center;
+}
+#gnav li:nth-child(3){
+	float: right;
+	width: 7%;
+	text-align: center;
+}
+
+
+#gnav a{
+	display: block;
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+}
+#gnav a:hover{
+	background: darkgrey;
+	color: black;
+}
+
+/*main
+--------------------*/
+.full{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+
+
+/*Google Map
+--------------------*/
+.map{
+	border: #d8c7a0 1px solid;
+	position: relative;
+	padding-bottom: 50%;
+}
+.map iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*introduction
+--------------------*/
+#intro{
+	margin-bottom: 40px;
+	padding: 20px 10px;
+	background: url(../img/bg_check.png);
+}
+#intro-text{
+	margin-bottom: 20px;
+	font-size: 114%;
+}
+.intro-map .map{
+	margin-bottom: 20px;
+}
+.intro-map address{
+	text-align: center;
+	font-style: normal;
+	font-size: 12px;
+}
+.intro-map address p+p{
+	margin-top: 10px;
+}
+.btn-tel{
+	display: inline-block;
+	width: 70%;
+	max-width: 200px;
+	padding: 8px 0;
+	border-radius: 2em;
+	background: #d8c7a0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+
+
+/*Pickup Menu
+--------------------*/
+
+
+/*info
+--------------------*/
+
+
+/*staff
+--------------------*/
+
+
+/*banner
+--------------------*/
+
+
+/*footer
+--------------------*/
+
+
+/*
+=========================================
+	Modules（Parts）
+=========================================
+*/
+
+/*Heading
+--------------------*/
+
+
+/*
+=========================================
+	Utilities
+=========================================
+*/
+
+/* マージン
+---------------------------------*/
+.mb0{ margin-bottom: 0 !important;}
+.mb5{ margin-bottom: 5px !important;}
+.mb10{ margin-bottom: 10px !important;}
+.mb15{ margin-bottom: 15px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.mb25{ margin-bottom: 25px !important;}
+.mb30{ margin-bottom: 30px !important;}
+.mb35{ margin-bottom: 35px !important;}
+.mb40{ margin-bottom: 40px !important;}
+.mb45{ margin-bottom: 45px !important;}
+.mb50{ margin-bottom: 50px !important;}
+
+/* 左右行揃え
+---------------------------------*/
+.ta-l{ text-align: left; }
+.ta-r{ text-align: right; }
+.ta-c{ text-align: center; }
+
+
+/* フロート／フロート解除
+---------------------------------*/
+.fl{ float:left; }
+.fr{ float:right; }
+.fl-img{ float: left; margin-right: 10px; margin-bottom: 10px;}
+.fr-img{ float: right; margin-left: 10px; margin-bottom: 10px;}
+.clear{ clear:both; }
+
+/* clearfix */
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	clear: both; 
+}
+.clearfix{
+	zoom:1;
+}
+
+/* ６４０ｐｘ以上のフルードグリッド設定 */
+@media screen and (min-width:640px){
+	#header{
+		padding: 80px 0;
+		text-align: left;
+	}
+
+
+	#menu{
+		margin-bottom: 40px;
+	}
+	.menu-list{
+		overflow: hidden;
+	}
+	.menu-list li{
+		float: left;
+		width: 31.9148%;
+		margin-right: 2.1276%
+	}
+	.menu-list li:nth-child(3n){
+		margin-right: 0;
+	}
+
+	#info{
+		float: left;
+		width: 48.9361%;
+	}
+	#staff{
+		float: left;
+		width: 48.9361%;
+	}
+
+	#banner{
+		clear: both;
+	}
+	.banner-list{
+		width: 100%;
+		max-width: none;
+		text-align: left;
+	}
+	.banner-list li{
+		float: left;
+		width: 31.9148%;
+		margin-right: 2.1276%;
+	}
+	.banner-list li:nth-child(3n){
+		margin-right: 0;
+	}
+
+
+	.footer-photo{
+		float: left;
+		width: 31.9148%;
+		margin-bottom: 20%;
+	}
+	.footer-info{
+		float: right;
+		width: 65.9574%;
+		margin-bottom:20px;
+	}
+	.sns{
+		clear: both;
+		text-align: center;
+	}
+	.copyright{
+		text-align: center;
+	}
+	
+
+	#intro{
+		padding: 20px;
+		overflow: hidden;
+	}
+	.intro-text{
+		width: 57.7777%;
+		float: left;
+		line-height: 1.8;
+	}
+	.intro-map{
+		width:40%;
+		float: right;
+	}
+	.full{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+	#staff{
+		float: right;
+		width: 48.9361%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.staff-photo{
+		float: left;
+		width: 35.7142%;
+		margin-bottom: 0;
+	}
+	.staff-msg{
+		float: right;
+		width: 59.5238%
+	}
+	
+
+}
+

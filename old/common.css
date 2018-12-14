@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*
+=======================================
+	Reset CSS
+=======================================
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  color: black;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 画像、入力箇所の行のなかでのテキストや画像などの縦方向の揃え位置を指定する */
+img,
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: azure;
+}
+a:hover img {
+  opacity: 0.4;
+  transition: 0.6s;
+}
+
+/*
+=========================================
+	Base Layout
+=========================================
+*/
+#gnav {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 0, 0);
+}
+nav ul {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+}
+nav ul li a {
+  text-align: center;
+  /* line-height: 3em; */
+  display: block;
+  padding: 10px 15px;
+  margin: 0;
+}
+nav ul li a:hover:nth-child(1) {
+  color: grey;
+}
+nav ul li a:hover:nth-child(3) {
+  background-color: rgb(19, 19, 19);
+}
+nav ul li a:hover:nth-child(4) {
+  background-color: rgb(19, 19, 19);
+}
+
+.gnav-item img {
+  width: 26px;
+  height: 26px;
+}
+.item1 {
+  font-size: 20px;
+}
+.item2 {
+  background-color: rgb(19, 19, 19);
+  flex-grow: 1;
+}
+
+/* wrap, コンテンツ部全体 */
+/* header,TOP画 */
+header {
+  background-color: rgb(19, 19, 19);
+}
+
+.top_visual {
+
+}
+.top_visual img {
+  position: relative;
+}
+
+#toptext {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  padding: 3%;
+  font-family: serif;
+  text-align: center;
+  font-size: 300%;
+}
+.title h1 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  font-size: 700%;
+}
+
+/* main1, コンテンツ部1 */
+#main1 {
+  background-color: rgba(190, 190, 190, 0.349);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 75px;
+  padding-top: 150px;
+}
+.menu-divst1 {
+  display: flex;
+}
+.main1-item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.main1-item a {
+  margin: 30px;
+}
+
+/* main2, コンテンツ部2 */
+.menu-divst2 {
+  display: flex;
+}
+.main2-item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.main2-item a {
+  margin: 30px;
+}
+
+/* footer,snsとか */
+
+footer {
+  background-color: rgba(190, 190, 190, 0.349);
+}
+#footer-text {
+  font-size: 200%;
+  text-align: center;
+}
+.pagetop img:hover {
+  background-color: gray;
+  border-radius: 50%;
+}
+.sns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.sns img {
+  width: 32px;
+  height: 32px;
+}
+.sns img:hover {
+  background-color: gray;
+  border-radius: 50%;
+}
+.icon-twitter {
+  margin: 10px;
+}
+.icon-fb {
+  margin: 10px;
+}
+.icon-insta {
+  margin: 10px;
+}
+.copyright {
+  text-align: center;
+}
