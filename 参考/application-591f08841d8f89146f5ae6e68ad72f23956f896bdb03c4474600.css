@@ -99,11 +99,8 @@
 .icon-svg_cart:before {
   content: '\e919';
 }
-.icon-svg_txt_search:before {
-  content: '\e91a';
-}
 .icon-svg_close:before {
-  content: '\e91b';
+  content: '\e91be91b';
 }
 .icon-svg_arrow:before {
   content: '\e91c';
@@ -1449,6 +1446,9 @@ button:disabled:hover {
   background: #ccc;
   color: #fff;
 }
+
+
+
 @media (max-width: 1000px) {
   .head__btns-box-btn {
     padding: 17px 8px;

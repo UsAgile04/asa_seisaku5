@@ -10,7 +10,7 @@
     />
     <meta name="keywords" content="課題制作,Webギャラリー,日用品,写真" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="このサイト自体の紹介ページ" />
+    <meta name="description" content="全てのギャラリー集で、カテゴリー検索で使われるページ" />
     <!-- icon -->
     <link
       rel="icon"
@@ -20,9 +20,10 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
     <link rel="stylesheet" href="css/common.css" media="all" />
-    <link rel="stylesheet" href="css/site_introduction.css" media="all" />
+    <link rel="stylesheet" href="css/allgallery.css" media="all" />
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
+    <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
   </head>
 
   <body>
@@ -31,7 +32,7 @@
         <li class="gnav-item item1"><a href="#">日常のオトモ</a></li>
         <li class="gnav-item item2"></li>
         <li class="gnav-item item3">
-          <a href="#"><img src="img/kensaku.png"/></a>
+          <a href="#"><img src="img/icon/kensaku.png"/></a>
         </li>
         <li class="gnav-item item4">
           <a href="#"><img src="./img/icon/iconmonstr-menu-1-64.png"/></a>
@@ -40,7 +41,175 @@
     </nav>
     <!-- /nav -->
 
-    <header></header>
+    <header>       
+       <div class="head-lower__links-wrap">
+          <ul class="head-lower__links">
+            <li class="editors head-lower__link-wrap">
+              <a class="head-lower__link" href="#top">おすすめ</a>
+            </li>
+            <li class="head-lower__link-wrap popular">
+              <a class="head-lower__link active" href="/exhibitions/popular"
+                >人気</a
+              >
+            </li>
+            <li class="fresh head-lower__link-wrap">
+              <a class="head-lower__link active" href="/exhibitions/fresh"
+                >新着</a
+              >
+            </li>
+            <!-- <li class="closing head-lower__link-wrap">
+              <a class="head-lower__link active" href="/exhibitions/closing"
+                >終了間近</a
+              >
+            </li> -->
+          </ul>
+
+          <div class="head__discover-others-wrap view-pc-tab">
+            <div class="head__discover-search">
+              <form
+                class="head__discover-search-form"
+                id="exhibition_search"
+                action="/exhibitions/editors"
+                accept-charset="UTF-8"
+                method="get"
+              >
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <div class="head__discover-search-input-wrap">
+                  <div
+                    class="svg-search icon-svg_txt_search"
+                    onclick="submitTextSearchForm()"
+                  ></div>
+                  <input
+                    class="head__discover-search-input allow_submit"
+                    placeholder="個展名、タグ、ユーザー名"
+                    type="search"
+                    name="q[title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont]"
+                    id="q_title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont"
+                  />
+                  <a
+                    class="head__discover-search-cancel "
+                    href="/exhibitions/editors?q="
+                    ><div class="svg-cancel icon-svg_close"></div>
+                  </a>
+                </div>
+                <input
+                  type="submit"
+                  name="commit"
+                  value="search"
+                  class="head__discover-search-submit"
+                  data-disable-with="search"
+                />
+              </form>
+            </div>
+            <div class="head__discover-cat-select-wrap">
+              <div class="head__discover-cat-select cmn__dropdown-btn">
+                すべてのカテゴリー
+              </div>
+              <div
+                class="head__discover-cat-select-dropdown cmn__dropdown-wrap"
+                id="catsDropdown"
+              >
+                <ul>
+                  <li
+                    class="category-btn"
+                    id="category_0"
+                    onclick="selectCategory(this)"
+                  >
+                    すべてのカテゴリー
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_2"
+                    onclick="selectCategory(this)"
+                  >
+                    抽象
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_3"
+                    onclick="selectCategory(this)"
+                  >
+                    動物
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_4"
+                    onclick="selectCategory(this)"
+                  >
+                    ファッション
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_5"
+                    onclick="selectCategory(this)"
+                  >
+                    風景
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_6"
+                    onclick="selectCategory(this)"
+                  >
+                    生活
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_7"
+                    onclick="selectCategory(this)"
+                  >
+                    自然
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_8"
+                    onclick="selectCategory(this)"
+                  >
+                    人々
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_10"
+                    onclick="selectCategory(this)"
+                  >
+                    静物
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_9"
+                    onclick="selectCategory(this)"
+                  >
+                    スナップ
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_11"
+                    onclick="selectCategory(this)"
+                  >
+                    交通
+                  </li>
+                  <li
+                    class="category-btn"
+                    id="category_1"
+                    onclick="selectCategory(this)"
+                  >
+                    その他
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="head__discover-mobile-wrap view-sp">
+            <div class="head__discover-mobile">
+              <div
+                class="head__discover-mobile-in empty icon-svg_close"
+                onclick="showDetailSearchModal('discover')"
+              >
+                詳細検索
+              </div>
+            </div>
+          </div>-->
+        </div> 
+      </header>
 
     <section id="main1" class="main1-cont"></section>
 
