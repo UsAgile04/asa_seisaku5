@@ -145,7 +145,7 @@ a:hover img {
 }
 
 #button-4 {
-  border: 2px solid  rgb(0, 3, 170);
+  border: 2px solid navy;
   color: navy;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
@@ -162,7 +162,7 @@ a:hover img {
   left: 0;
   top: 50%;
   z-index: -1;
-  background-color:  navy;
+  background-color:navy;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -174,7 +174,7 @@ a:hover img {
 }
 
 #button-4:hover {
-  color: #ecf0f1;
+  color: #ffffff;
 }
 
 #button-4:hover:before {
@@ -291,7 +291,7 @@ header {
 
 /* main1, コンテンツ部1 */
 #main1 {
-  background-color: rgba(212, 212, 212, 0.349);
+  background-color: rgba(212, 212, 212, 0.226);
 }
 h2 {
   text-align: center;
@@ -399,8 +399,8 @@ figure:hover figcaption {
 
 /* footer,snsとか */
 
-footer {
-  background-color: rgba(190, 190, 190, 0.349);
+#common_footer {
+  background-color: rgba(190, 190, 190, 0.322);
 }
 #under {
   padding-top: 3%;

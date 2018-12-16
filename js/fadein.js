@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
 
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 400) {
             // ↑ スクロール位置が100よりも小さい場合に以下の処理をする
             $('.gotop').slideDown("fast");
             // ↑ (100より小さい時は)ページトップボタンをスライドダウン
