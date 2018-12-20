@@ -1,0 +1,33 @@
+<svg version="1.1" id="el_el-KeKtyB" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><style type="text/css">@-webkit-keyframes el_fqY6koLavu_Ki4Wx3Vuk_Animation {
+    0% {
+        -webkit-transform: translate(16px, 16px) rotate(1890deg) translate(-16px, -16px);
+                transform: translate(16px, 16px) rotate(1890deg) translate(-16px, -16px)
+    }
+    100% {
+        -webkit-transform: translate(16px, 16px) rotate(0deg) translate(-16px, -16px);
+                transform: translate(16px, 16px) rotate(0deg) translate(-16px, -16px)
+    }
+}
+@keyframes el_fqY6koLavu_Ki4Wx3Vuk_Animation {
+    0% {
+        -webkit-transform: translate(16px, 16px) rotate(1890deg) translate(-16px, -16px);
+                transform: translate(16px, 16px) rotate(1890deg) translate(-16px, -16px)
+    }
+    100% {
+        -webkit-transform: translate(16px, 16px) rotate(0deg) translate(-16px, -16px);
+                transform: translate(16px, 16px) rotate(0deg) translate(-16px, -16px)
+    }
+}
+#el_el-KeKtyB * {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#el_fqY6koLavu_Ki4Wx3Vuk {
+    -webkit-animation-name: el_fqY6koLavu_Ki4Wx3Vuk_Animation;
+            animation-name: el_fqY6koLavu_Ki4Wx3Vuk_Animation
+}</style><style/>  <g id="el_fqY6koLavu_Ki4Wx3Vuk" data-animator-group="true" data-animator-type="1"><image id="el_fqY6koLavu" width="32" height="32" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJN&#10;AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAAAAAKoMAKwMAKsM&#10;AKsMAKoMAKsMAKoJAK0LAK0LAK4MAKoMAKsMAKoMAKsMAKoMAKsNAKsKALEAAL8MAKoNAKoMAKoA&#10;ALENAKoMAKoAAMwAALQNAKsKAKwMAKoMAKoLAKoHAKoNAKoNAKoLAKoMAKsMAKoHAK4AAP8NAKoM&#10;AKoAAP8AAKoNAKoNAKoAAKoLAKwNAKoNAKsMAKsIAK8MAKoMAKoAAL8MAKsKAKwNAKsKAKoMAKoN&#10;AKoLAKoJAK0MAKsMAKoMAKoMAKoAALMJAKoMAKsMAK0MAKoAALYMAKsNAKsMAKoMAKoAAKoMAKoN&#10;AKsMAKoMAKoNAKoMAKoNAKwLAKsAAKoMAKsNAKsLAKsMAK0MAK4MAKsAAKoMAKoNAKoMAKsNAKsL&#10;AKsNALMMAKoMAKwLAKwNAKsMAKoMAKsLAKoNAKoNAKoKAKsMAKsMAKwNAKoMAKsMAKoMAKsMAKoK&#10;AK0JALALAKwNAKsKAKwNAKsNAKoNAKoNAKoIAKoNAKoLAKoNAKoMAKsMAKsMAKoLAKoLAKoLAKoM&#10;AKsNAKv///9JksKOAAAAinRSTlMACVOpzuL4/ThELxWb9oX313oaBHv00w3b/AURxTGZ0Bgk37ct&#10;/uQmAczlAhLH2A9ZoqCPIPn6CJVNjEu6eEgc9eqsfgo5QD4qDn2Jr88Mk/LWkCdXZWEDmMt0QRa/&#10;Bmk86bNbFL4rLuDNl3LwZkyUVopVP3yuGR1HeUqLTvPZIZ9dyeO50ocwRaeX+BewAAAAAWJLR0SL&#10;8m9H4AAAAAd0SU1FB+IMFAETEYdONrcAAAIZSURBVDjLbVP3WxNBEH3EcCkEQrgUQlGCHF4IBERJ&#10;1KAGciQBBSHBgkIoAREsWMHeUNT5q73d2yvwMb/M++a9nZ2yC1jW4DrjbpQ8Xvj8OMWaAs3ErAX+&#10;ILWG2k7QcjjCaYrKsXbm4y0dTr6zi4R146xA53psPtFr8ufRp5i4/4IlCJGVQE1amAZEIR2pQUmE&#10;huAjh6WHuSA8gosiEsKoU0CXGH95LKomMkbAn40cE2QSuuAK0VVcMy5Fjjlp/PoN3oJ6U68iltfv&#10;kmMTjJlEgcjt0nROmyqWytNM5WLMDErsklu4PZsD5kbuJOM85fxCDhWetIpF3d3FvftQC/OOKh5g&#10;iPslDQ+JHvGulgMeW+BGowFWalhV+sTg1tYtQT9Eg7SRQr1sjnZzyxRICJpwa9OkH9eR2hDRPAas&#10;bOtrQrCtrKK2YgSfYMcuyLO7zAVFoqfQdsR2dh09PSuokOt4rsNFVPkGK3ixkOdkPLn3cg7IuSfx&#10;im2hxKZK9JqlnC6/KU418GfrJnqLd4yZiMlpvUZ97PsHKabqef9hfIwxH0Xdn/CZaI+9tww57Uu2&#10;21y1+lX6xs5Wjgm+Y0agUfwI866G006BDz/NIQ7KNWMwbfawaAleC4esV109NGPKNn6ZuDdhf4z9&#10;39b6rQRdnc6vVTvib6Bdk6MGHQnLJ37nQaiVgmUccbo50HTaB//zF14leDj7z5W1g/8BL4wwxKWC&#10;lgYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTItMjBUMDg6MTk6MTctMDc6MDAjzhZsAAAAJXRF&#10;WHRkYXRlOm1vZGlmeQAyMDE4LTEyLTIwVDA4OjE5OjE3LTA3OjAwUpOu0AAAAABJRU5ErkJggg=="/></g>
+</svg>
