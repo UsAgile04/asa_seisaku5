@@ -22,23 +22,66 @@
       href="./img/icon/シャッターアイコン4 (2).png"
     />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
     <link rel="stylesheet" href="css/common.css" media="all" />
     <link rel="stylesheet" href="css/allgallery.css" media="all" />
     <link
-    href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="./参考/application-591f08841d8f89146f5ae6e68ad72f23956f896bdb03c4474600.css"
+      media="all"
+    /> -->
 
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
-    <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
+    <!-- <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script> -->
     <script src="./js/fadein.js"></script>
-
     <script>
+      // 共通メニュー
+
       $(function() {
         $("#common_nav").load("nav.html");
         $("#common_footer").load("footer.html");
+      });
+    </script>
+    <script>
+      // カテゴリーボタンのアコーディオン設定
+
+      $(function() {
+        // 親メニュー処理
+        $(".cmn__dropdown-btn").click(function() {
+          // メニュー表示/非表示
+          $(this)
+            .next("#catsDropdown")
+            .slideToggle("fast");
+        });
+      });
+    </script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+
+    <script>
+      // Isotopeの初期化処理
+      $(function() {
+        var $container = $("#container");
+        $("#container").isotope({
+          itemSelector: ".item",
+          // percentPosition: true,
+          layoutMode: "fitRows",
+          masonry: {
+            columnWidth: 500
+          }
+        });
+        // jQueryを使って、クリックイベントを追加
+        $("#filters").on("click", "button", function() {
+          //クリックしたボタンのdata-filterの値を変数に格納します
+          var filterValue = $(this).attr("data-filter");
+          //ここでオプションのfilterを発動させています。
+          //date-filterの値を使ってフィルタリングを行います。
+          $container.isotope({ filter: filterValue });
+        });
       });
     </script>
   </head>
@@ -72,6 +115,7 @@
         </ul>
 
         <div class="head__discover-others-wrap view-pc-tab">
+          <!-- キーワード検索 -->
           <div class="head__discover-search">
             <form
               class="head__discover-search-form"
@@ -108,100 +152,76 @@
               />
             </form>
           </div>
+
+          <!-- カテゴリーフィルター -->
           <div class="head__discover-cat-select-wrap">
             <div class="head__discover-cat-select cmn__dropdown-btn">
               すべてのカテゴリー
             </div>
+
+            <!-- <div
+              class="head__discover-cat-select-dropdown cmn__dropdown-wrap"
+              id="catsDropdown"
+            >
+              <ul id="filters" class="button-group">
+                <li class="category-btn" id="category_0">
+                  <button data-filter="*">すべてのカテゴリー</button>
+                </li>
+                <li class="category-btn" id="category_2">
+                  <button data-filter=".type2">カテゴリ2</button>
+                </li>
+                <li class="category-btn" id="category_3">
+                  <button data-filter=".type3">カテゴリ3</button>
+                </li>
+                <li class="category-btn" id="category_4">
+                  <button data-filter=".type4">カテゴリ4</button>
+                </li>
+                <li class="category-btn" id="category_5">
+                  <button data-filter=".type5">カテゴリ5</button>
+                </li>
+                <li class="category-btn" id="category_6">
+                  <button data-filter=".type6">カテゴリ6</button>
+                </li>
+                <li class="category-btn" id="category_7">
+                  <button data-filter=".type7">カテゴリ7</button>
+                </li>
+                <li class="category-btn" id="category_8">
+                  <button data-filter=".type8">カテゴリ8</button>
+                </li>
+                <li class="category-btn" id="category_9">
+                  <button data-filter=".type9">カテゴリ9</button>
+                </li>
+
+                <li class="category-btn" id="category_10">
+                  <button data-filter=".type10">カテゴリ10</button>
+                </li>
+                <li class="category-btn" id="category_11">
+                  <button data-filter=".type11">カテゴリ11</button>
+                </li>
+                <li class="category-btn" id="category_1">
+                  <button data-filter=".type1">カテゴリ１</button>
+                </li>
+              </ul>
+            </div> -->
+
             <div
               class="head__discover-cat-select-dropdown cmn__dropdown-wrap"
               id="catsDropdown"
             >
-              <ul>
-                <li
-                  class="category-btn"
-                  id="category_0"
-                  onclick="selectCategory(this)"
-                >
-                  すべてのカテゴリー
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_2"
-                  onclick="selectCategory(this)"
-                >
-                  抽象
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_3"
-                  onclick="selectCategory(this)"
-                >
-                  動物
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_4"
-                  onclick="selectCategory(this)"
-                >
-                  ファッション
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_5"
-                  onclick="selectCategory(this)"
-                >
-                  風景
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_6"
-                  onclick="selectCategory(this)"
-                >
-                  生活
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_7"
-                  onclick="selectCategory(this)"
-                >
-                  自然
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_8"
-                  onclick="selectCategory(this)"
-                >
-                  人々
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_10"
-                  onclick="selectCategory(this)"
-                >
-                  静物
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_9"
-                  onclick="selectCategory(this)"
-                >
-                  スナップ
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_11"
-                  onclick="selectCategory(this)"
-                >
-                  交通
-                </li>
-                <li
-                  class="category-btn"
-                  id="category_1"
-                  onclick="selectCategory(this)"
-                >
-                  その他
-                </li>
-              </ul>
+              <div id="filters" class="button-group">
+                <button data-filter="*">すべてのカテゴリー</button>
+                <button data-filter=".type2">カテゴリ2</button>
+                <button data-filter=".type3">カテゴリ3</button>
+                <button data-filter=".type4">カテゴリ4</button>
+                <button data-filter=".type5">カテゴリ5</button>
+                <button data-filter=".type6">カテゴリ6</button>
+                <button data-filter=".type7">カテゴリ7</button>
+                <button data-filter=".type8">カテゴリ8</button>
+                <button data-filter=".type9">カテゴリ9</button>
+                <button data-filter=".type10">カテゴリ10</button>
+                <button data-filter=".type11">カテゴリ11</button>
+                <button data-filter=".type1">カテゴリ１</button>
+              </div>
             </div>
           </div>
         </div>
@@ -219,12 +239,57 @@
         -->
       </div>
     </header>
+    <section>
+      <div id="container">
+        <div class="item type9">
+          <figure>
+            <a href="./exhibitions_page-1.html">
+              <img src="img/ph_menu01.jpg" alt="" />
+              <figcaption><h3>いいね数とか取得</h3></figcaption>
+            </a>
+          </figure>
+          <p class="menu-info">個展名</p>
+        </div>
 
-    <section id="main1" class="main1-cont"></section>
+        <div class="item w2 type2">
+          <figure>
+            <a href="./exhibitions_page-2.html">
+              <img src="img/ph_menu01.jpg" alt="" />
+              <figcaption><h3>いいね数とか取得</h3></figcaption>
+            </a>
+          </figure>
+          <p class="menu-info">個展名</p>
+        </div>
+        <div class="item type1">
+          <figure>
+            <a href="./exhibitions_page-3.html">
+              <img src="img/ph_menu01.jpg" alt="" />
+              <figcaption><h3>いいね数とか取得3</h3></figcaption>
+            </a>
+          </figure>
+          <p class="menu-info">個展名</p>
+        </div>
+        <div class="item type9">
+          <figure>
+            <a href="./exhibitions_page-4.html">
+              <img src="img/ph_menu01.jpg" alt="" />
+              <figcaption><h3>いいね数とか取得</h3></figcaption>
+            </a>
+          </figure>
+          <p class="menu-info">個展名</p>
+        </div>
+      </div>
+
+      <!-- 読み込み中のヤツ -->
+      <div class="cmn__loader-wrap infinite-loader exhibits">
+        <div class="wavy-loader">
+          <div class="loader"><span></span></div>
+        </div>
+      </div>
+    </section>
 
     <section id="main2" class="main2-cont"></section>
-    
-    <div id="common_footer"></div>
 
+    <div id="common_footer"></div>
   </body>
 </html>

@@ -363,7 +363,6 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
   .icon-svg_txt_search:before {
   content: url(../img/icon/検索フォーム.png);
 }
@@ -386,4 +385,166 @@ header {
     line-height: 1.1;
   }
 
+  /* ギャラリー一覧のデザイン */
+
+  .item { width: 25%; }
+/*他と違う幅の要素を入れたい場合も、下記のように指定すればIsotopeが並べ変えてくれます*/
+.item.w2 { width: 150%; }
+
+
+
+/* ウェーブ */
+  @media (max-width: 1000px) {
+  .lp__content-wrap .campaign-banner__wrap {
+    padding-top: 30px;
+  }
+}
+.cmn__loader-wrap {
+  position: relative;
+}
+.cmn__loader-wrap:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  content: '';
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.cmn__loader-wrap .wavy-loader {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.cmn__loader-wrap .wavy-loader.standby {
+  display: block;
+}
+.cmn__loader-wrap .wavy-loader.standby.active {
+  opacity: 1;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+.cmn__loader-wrap .wavy-loader .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  width: 40px;
+  height: 24px;
+}
+.cmn__loader-wrap .wavy-loader .loader span,
+.cmn__loader-wrap .wavy-loader .loader:before,
+.cmn__loader-wrap .wavy-loader .loader:after {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 6px;
+  height: 100%;
+  background: #0300bd;
+  border-radius: 2px;
+}
+.cmn__loader-wrap .wavy-loader .loader:before,
+.cmn__loader-wrap .wavy-loader .loader:after {
+  content: '';
+}
+.cmn__loader-wrap .wavy-loader .loader:before {
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-animation: wave 0.88s linear infinite;
+  animation: wave 0.88s linear infinite;
+}
+.cmn__loader-wrap .wavy-loader .loader span {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-animation: wave 0.93s linear infinite -0.6s;
+  animation: wave 0.93s linear infinite -0.6s;
+}
+.cmn__loader-wrap .wavy-loader .loader:after {
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-animation: wave 0.8s linear infinite -0.3s;
+  animation: wave 0.8s linear infinite -0.3s;
+}
+.cmn__loader-wrap.infinite-loader {
+  height: 80px;
+}
+.cmn__loader-wrap.infinite-loader .loader {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.cmn__loader-wrap.notification-loader {
+  height: 70px;
+}
+@media (max-width: 1000px) {
+  .cmn__loader-wrap.infinite-loader {
+    height: 40px;
+  }
+}
+@-webkit-keyframes wave {
+  0% {
+    height: 100%;
+  }
+  40% {
+    height: 10%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes wave {
+  0% {
+    height: 100%;
+  }
+  40% {
+    height: 10%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+[data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
+    display: none;
+}
+[data-filter-view][data-filter-view~="貝類"] [data-filter-key="貝類"],
+[data-filter-view][data-filter-view~="光物"] [data-filter-key="光物"],
+[data-filter-view][data-filter-view~="白身"] [data-filter-key="白身"],
+[data-filter-view][data-filter-view~="赤身"] [data-filter-key="赤身"] {
+    display: block;
+}
 

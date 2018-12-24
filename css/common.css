@@ -535,7 +535,6 @@ figure:hover figcaption {
   color: black;
   transition: 0s;
 }
-
 .sns {
   float: right;
   display: flex;
@@ -551,7 +550,6 @@ figure:hover figcaption {
   border-radius: 50%;
   transition: 0.23s;
 }
-
 .icon-twitter {
   margin: 0 10px;
 }
