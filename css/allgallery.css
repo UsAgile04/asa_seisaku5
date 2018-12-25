@@ -1,5 +1,5 @@
 header {
-  background-color: rgba(212, 212, 212, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
 }
 @media (max-width: 1000px) {
   .head__btns-box-btn {
@@ -206,26 +206,37 @@ header {
 .head__discover-cat-select-dropdown {
   display: none;
   position: absolute;
-  top: 97px;
+  top: 96px;
   right: 40px;
-  z-index: 69;
+  z-index: 2;
   width: 160px;
   background: #fff;
   border: solid 1px #dcdcdc;
   box-shadow: 0 0 1px 0 #d6d6d6;
 }
-.head__discover-cat-select-dropdown .category-btn {
+.head__discover-cat-select-dropdown .button-group {
   padding: 10px;
   font-size: 13px;
   line-height: 1.4;
-  cursor: pointer;
   -webkit-transition: ease-in 0.1s;
   transition: ease-in 0.1s;
 }
-.head__discover-cat-select-dropdown .category-btn:hover {
-  color: #fff;
-  background: #dcdcdc;
+.button-group button{
+  width: 100%;
+margin: 1% 0;
+    /* 背景色を濃い青色に指定 */
+   background-color: rgb(255, 255, 255);
+    /* 文字色を白色に指定 */
+    color: rgb(0, 0, 0);
+   /* ボーダーをなくす */
+    border-style: none;
 }
+
+.button-group button:hover{
+  transition: 0.5s;
+  background-color: rgba(158, 158, 158, 0.582);
+  }
+  
 @media (max-width: 1000px) {
   .head__discover-others-wrap {
     margin: 0;
@@ -248,6 +259,10 @@ header {
     font-size: 12px;
   }
 }
+
+
+
+
 .head__discover-mobile-wrap {
   padding: 15px;
 }
@@ -546,5 +561,4 @@ header {
 [data-filter-view][data-filter-view~="白身"] [data-filter-key="白身"],
 [data-filter-view][data-filter-view~="赤身"] [data-filter-key="赤身"] {
     display: block;
-}
-
+};
