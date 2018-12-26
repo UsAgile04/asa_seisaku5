@@ -100,9 +100,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  color: black;
+  color: rgb(65, 65, 65);
   line-height: 1.5;
   font-size: 15px;
+  letter-spacing: 0.065em;
+
 }
 img {
   border: 0;
@@ -451,15 +453,25 @@ h2 {
     opacity: 1;
   }
 }
+
+/* メインメニューの文字 */
 .menu-text {
   position: absolute;
-  top: 20%;
-  left: 35%;
+  top: 27%;
   color: rgb(255, 255, 255);
 }
+.left-one {
+  left: 33%
+}
+.middle-one {
+  left: 43%
+}
+.right-one {
+  left: 30%
+}
 .menu-info {
-  margin-top: 10%;
-  font-size: 0.8em;
+  margin-top: 8%;
+  font-size: 0.9em;
 }
 
 /* main2, コンテンツ部2 */
