@@ -195,6 +195,8 @@ header {
 .head__discover-search-submit[type="submit"] {
   display: none;
 }
+
+
 .head__discover-cat-select-wrap {
   margin: auto 0 auto auto;
 }
@@ -221,6 +223,12 @@ header {
   border: solid 1px #dcdcdc;
   box-shadow: 0 0 1px 0 #d6d6d6;
 }
+
+
+
+
+
+/* カテゴリボタン */
 .head__discover-cat-select-dropdown .button-group {
   padding: 10px;
   font-size: 13px;
@@ -228,19 +236,19 @@ header {
   -webkit-transition: ease-in 0.1s;
   transition: ease-in 0.1s;
 }
-.button-group button {
-  width: 100%;
+.button-group input {
+  /* display: none; */
+  /* width: 100%;
   margin: 1% 0;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  /* ボーダーをなくす */
-  border-style: none;
+  border-style: none; */
 }
 
-.button-group button:hover {
+/* .button-group button:hover {
   transition: 0.5s;
   background-color: rgba(158, 158, 158, 0.582);
-}
+} */
 
 @media (max-width: 1000px) {
   .head__discover-others-wrap {
@@ -386,7 +394,7 @@ header {
 
 /* ギャラリー一覧のデザイン */
 .item {
-  margin: 3% 1.5%;
+  /* margin: 3% 1.5%; */
   /* -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -ms-transition-duration: 0.2s;
@@ -498,20 +506,22 @@ header {
 .cmn__loader-wrap .wavy-loader .loader:after {
   content: "";
 }
+
 /*ウェーブひだり*/
+/* ←　を指定すればフォントにエイリアスがかかってちょっとだけクールに */
 .cmn__loader-wrap .wavy-loader .loader:before {
   left: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   -webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
-  　　/* ←　を指定すればフォントにエイリアスがかかってちょっとだけクールに */
   -webkit-animation: wave
     0.88s linear infinite;
   animation: wave 0.88s linear infinite;
 }
+
+/* ウェーブまんなか */
 .cmn__loader-wrap .wavy-loader .loader span {
-  　/*ウェーブまんなか*/
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -520,8 +530,9 @@ header {
   -webkit-animation: wave 0.93s linear infinite -0.6s;
   animation: wave 0.93s linear infinite -0.6s;
 }
+
+/*ウェーブみぎ*/
 .cmn__loader-wrap .wavy-loader .loader:after {
-  　/*ウェーブみぎ*/
   right: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);

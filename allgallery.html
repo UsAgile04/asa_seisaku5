@@ -29,38 +29,27 @@
       rel="stylesheet"
     />
 
-    <!-- <link
-      rel="stylesheet"
-      href="./参考/application-591f08841d8f89146f5ae6e68ad72f23956f896bdb03c4474600.css"
-      media="all"
-    /> -->
-
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
-    <!-- <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script> -->
     <script src="./js/fadein.js"></script>
-    <script>
-      // 共通メニュー
-
+    <script>// 共通メニュー
       $(function() {
         $("#common_nav").load("nav.html");
         $("#common_footer").load("footer.html");
       });
     </script>
-    <script>
-      // カテゴリーボタンのアコーディオン設定
-
+    <script>// カテゴリーボタンのアコーディオン設定
       $(function() {
-        // 親メニュー処理
-        $(".cmn__dropdown-btn").click(function() {
-          // メニュー表示/非表示
+        $(".cmn__dropdown-btn").click(function() {        // 親メニュー表示/非表示
           $(this)
             .next("#catsDropdown")
             .slideToggle("fast");
         });
       });
     </script>
-    <script src="./js/isotope.pkgd.min.js"></script>
+
+
+  //  <!-- <script src="./js/isotope.pkgd.min.js"></script>
 
     <script>
       // Isotopeの初期化処理
@@ -85,7 +74,7 @@
           $container.isotope({ filter: filterValue });
         });
       });
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -163,9 +152,25 @@
 
             <div
               class="head__discover-cat-select-dropdown cmn__dropdown-wrap"
-              id="catsDropdown"
-            >
-              <div id="filters" class="button-group">
+              id="catsDropdown">
+
+              <div class="filters button-group button-area">
+                
+                <label class="button">
+                  <input type="checkbox" value="group1" />Group 1
+                </label>
+                <label class="button">
+                  <input type="checkbox" value="group2" />Group 2
+                </label>
+                <label class="button">
+                  <input type="checkbox" value="group3" />Group 2
+                </label>
+                <label class="button">
+                  <input type="checkbox" value="group4" />Group 3
+                </label>
+
+
+<!-- 
                 <button data-filter="*">すべてのカテゴリー</button>
                 <button data-filter=".type2">カテゴリ2</button>
                 <button data-filter=".type3">カテゴリ3</button>
@@ -177,7 +182,7 @@
                 <button data-filter=".type9">カテゴリ9</button>
                 <button data-filter=".type10">カテゴリ10</button>
                 <button data-filter=".type11">カテゴリ11</button>
-                <button data-filter=".type1">カテゴリ１</button>
+                <button data-filter=".type1">カテゴリ１</button> -->
               </div>
             </div>
           </div>
@@ -197,8 +202,8 @@
       </div>
     </header>
     <section>
-      <div id="container">
-        <div class="item type1">
+      <div id="mnsry_container">
+        <div class="item group1">
           <figure>
             <a href="./exhibitions_page-1.html">
               <img src="img/ph_menu01.jpg" alt="" />
@@ -209,7 +214,7 @@
           <p class="work-info artist-name">name</h3>
         </div>
 
-                <div class="item type2">
+                <div class="item group2">
                   <figure>
                     <a href="./exhibitions_page-1.html">
                       <img src="img/ph_menu01.jpg" alt="" />
@@ -221,7 +226,7 @@
                   <p class="work-info gallery-info">テキストテキストテキスト</h3>
                     <p class="work-info artist-name">テキストテキストテキスト</h3>
                 </div>
-        <div class="item type4">
+        <div class="item group3">
           <figure>
             <a href="./exhibitions_page-1.html">
               <img src="img/ph_menu01.jpg" alt="" />
@@ -233,79 +238,7 @@
           <p class="work-info gallery-info">the world</h3>
             <p class="work-info artist-name">吉岡　計</h3>
         </div>
-        <div class="item type5">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type6">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type9">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type7">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type8">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type9">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/ph_menu01.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">the world</h3>
-            <p class="work-info artist-name">吉岡　計</h3>
-        </div>
-        <div class="item type10">
+        <div class="item group3">
           <figure>
             <a href="./exhibitions_page-1.html">
               <img src="img/ph_menu01.jpg" alt="" />
@@ -331,5 +264,40 @@
     <section id="main2" class="main2-cont"></section>
 
     <div id="common_footer"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/masonry.js"></script>
+    <script src="./js/multipleFilterMasonry.js"></script>
+<script>
+    $("#container").multipleFilterMasonry({
+      itemSelector: ".item",
+      filtersGroupSelector:"#filters"
+    }
+  );
+
+  $(window).load(function() {
+  $("#container").multipleFilterMasonry({
+    itemSelector: ".item",
+    filtersGroupSelector:"#filters"
+  }
+  $(".button").find("input").change(function(){
+    $(this).parent().toggleClass("active");
+  });
+});
+</script>
+
   </body>
 </html>
