@@ -236,14 +236,15 @@ header {
   -webkit-transition: ease-in 0.1s;
   transition: ease-in 0.1s;
 }
+/*
 .button-group input {
-  /* display: none; */
+ display: none; */
   /* width: 100%;
   margin: 1% 0;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  border-style: none; */
-}
+  border-style: none;
+}*/
 
 /* .button-group button:hover {
   transition: 0.5s;
@@ -393,6 +394,24 @@ header {
 }
 
 /* ギャラリー一覧のデザイン */
+#mnsry_container .item{
+  width:33.3%;
+  min-height:200px;
+  margin: 5%;
+}
+@media (max-width: 860px) {
+  #mnsry_container .item {
+    width: 50%;
+    min-height: 150px;
+  }
+}
+@media (max-width: 667px) {
+  #mnsry_container .item {
+    width: 100%;
+    min-height: 220px;
+  }
+}
+
 .item {
   /* margin: 3% 1.5%; */
   /* -webkit-transition-duration: 0.2s;
@@ -415,6 +434,9 @@ header {
   font-weight: bold;
   text-align: center;
 }
+
+
+
 
 @media (max-width: 1000px) {
   .head-lower__book-btns {

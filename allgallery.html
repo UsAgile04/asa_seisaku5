@@ -49,7 +49,7 @@
     </script>
 
 
-  //  <!-- <script src="./js/isotope.pkgd.min.js"></script>
+<!-- <script src="./js/isotope.pkgd.min.js"></script>
 
     <script>
       // Isotopeの初期化処理
@@ -282,17 +282,18 @@
     <script src="./js/masonry.js"></script>
     <script src="./js/multipleFilterMasonry.js"></script>
 <script>
-    $("#container").multipleFilterMasonry({
+    $("#mnsry_container").multipleFilterMasonry({
       itemSelector: ".item",
-      filtersGroupSelector:"#filters"
+      filtersGroupSelector:".filters",
+
     }
   );
 
   $(window).load(function() {
-  $("#container").multipleFilterMasonry({
+  $("#mnsry_container").multipleFilterMasonry({
     itemSelector: ".item",
-    filtersGroupSelector:"#filters"
-  }
+    filtersGroupSelector:".filters"
+  });
   $(".button").find("input").change(function(){
     $(this).parent().toggleClass("active");
   });
