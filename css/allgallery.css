@@ -394,10 +394,13 @@ header {
 }
 
 /* ギャラリー一覧のデザイン */
+#mnsry_container{
+  margin: 2% 5% 0 5%;
+}
 #mnsry_container .item{
   width:33.3%;
   min-height:200px;
-  margin: 5%;
+  /* margin: 2%; */
 }
 @media (max-width: 860px) {
   #mnsry_container .item {
@@ -412,15 +415,15 @@ header {
   }
 }
 
-.item {
-  /* margin: 3% 1.5%; */
-  /* -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s; */
-}
 
+
+.item{
+  margin: 2% 0;
+}
+.item figure{
+  margin-left: auto;
+  margin-right: auto;
+}
 .gallery-info {
   margin: 5% 0 2%;
   font-size: 1.2rem;
@@ -457,6 +460,10 @@ header {
   }
 }
 
+
+
+
+
 /* ウェーブ */
 @media (max-width: 1000px) {
   .lp__content-wrap .campaign-banner__wrap {
@@ -476,7 +483,6 @@ header {
   content: "";
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
-
 /* ページの読み込み前は、うごめく */
 .cmn__loader-wrap .wavy-loader {
   display: none;

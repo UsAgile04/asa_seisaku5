@@ -285,14 +285,16 @@
     $("#mnsry_container").multipleFilterMasonry({
       itemSelector: ".item",
       filtersGroupSelector:".filters",
-
+      isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整するかしないか
     }
   );
 
   $(window).load(function() {
   $("#mnsry_container").multipleFilterMasonry({
     itemSelector: ".item",
-    filtersGroupSelector:".filters"
+    filtersGroupSelector:".filters",
+    isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整するかしないか
+
   });
   $(".button").find("input").change(function(){
     $(this).parent().toggleClass("active");

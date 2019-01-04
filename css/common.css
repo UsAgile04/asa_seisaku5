@@ -475,7 +475,7 @@ h2 {
 }
 
 /* main2, コンテンツ部2 */
-.menu-divst2 {
+/* .menu-divst2 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -493,10 +493,11 @@ h2 {
 .main2-item .menu-info {
   font-size: 120%;
 }
+ */
 figure {
   position: relative;
   overflow: hidden;
-  width: 300px;
+  width: 400px;
 }
 figcaption {
   position: absolute;
