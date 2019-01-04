@@ -60,32 +60,6 @@
         });
       });
     </script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-
-    <script>
-      // Isotopeの初期化処理
-      $(function() {
-        var $container = $("#container");
-        $("#container").isotope({
-          itemSelector: ".item",
-          // percentPosition: true,
-          layoutMode: "fitRows",
-          masonry: {
-            columnWidth: 300,
-            isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整するかしないか
-          },
-          
-        });
-        // jQueryを使って、クリックイベントを追加
-        $("#filters").on("click", "button", function() {
-          //クリックしたボタンのdata-filterの値を変数に格納します
-          var filterValue = $(this).attr("data-filter");
-          //ここでオプションのfilterを発動させています。
-          //date-filterの値を使ってフィルタリングを行います。
-          $container.isotope({ filter: filterValue });
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -205,10 +179,9 @@
               <figcaption><h3>いいね数とか取得</h3></figcaption>
             </a>
           </figure>
-          <p class="work-info gallery-info">title</h3>
-          <p class="work-info artist-name">name</h3>
+          <p class="work-info gallery-info">title</p>
+          <p class="work-info artist-name">name</p>
         </div>
-
                 <div class="item type2">
                   <figure>
                     <a href="./exhibitions_page-1.html">
@@ -331,5 +304,33 @@
     <section id="main2" class="main2-cont"></section>
 
     <div id="common_footer"></div>
+
+    <script src="./js/isotope.pkgd.min.js"></script>
+
+    <script>
+      // Isotopeの初期化処理
+      $(function() {
+        var $container = $("#container");
+        $("#container").isotope({
+          itemSelector: ".item",
+          // percentPosition: true,
+          layoutMode: "fitRows",
+          masonry: {
+            columnWidth: 300,
+            isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整するかしないか
+          },
+          
+        });
+        // jQueryを使って、クリックイベントを追加
+        $("#filters").on("click", "button", function() {
+          //クリックしたボタンのdata-filterの値を変数に格納します
+          var filterValue = $(this).attr("data-filter");
+          //ここでオプションのfilterを発動させています。
+          //date-filterの値を使ってフィルタリングを行います。
+          $container.isotope({ filter: filterValue });
+        });
+      });
+    </script>
+
   </body>
 </html>

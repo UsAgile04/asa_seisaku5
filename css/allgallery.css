@@ -302,7 +302,7 @@ header {
   letter-spacing: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
 .head__discover-mobile-clear {
@@ -385,13 +385,13 @@ header {
 }
 
 /* ギャラリー一覧のデザイン */
+#container{
+text-align: center;
+padding: 2% 4%;
+}
+
 .item {
   margin: 3% 1.5%;
-  /* -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s; */
 }
 
 .gallery-info {
@@ -476,7 +476,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   width: 40px;
   height: 24px;
@@ -503,29 +503,29 @@ header {
   left: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
-  　　/* ←　を指定すればフォントにエイリアスがかかってちょっとだけクールに */
   -webkit-animation: wave
     0.88s linear infinite;
   animation: wave 0.88s linear infinite;
 }
+
+/*ウェーブまんなか*/
 .cmn__loader-wrap .wavy-loader .loader span {
-  　/*ウェーブまんなか*/
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -webkit-animation: wave 0.93s linear infinite -0.6s;
   animation: wave 0.93s linear infinite -0.6s;
 }
+/*ウェーブみぎ*/
 .cmn__loader-wrap .wavy-loader .loader:after {
-  　/*ウェーブみぎ*/
   right: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -webkit-animation: wave 0.8s linear infinite -0.3s;
   animation: wave 0.8s linear infinite -0.3s;
@@ -539,7 +539,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
 .cmn__loader-wrap.notification-loader {
