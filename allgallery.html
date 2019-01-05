@@ -35,31 +35,6 @@
       media="all"
     /> -->
 
-    <!-- javascript -->
-    <script src="./js/jQuery.js"></script>
-    <!-- <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script> -->
-    <script src="./js/fadein.js"></script>
-    <script>
-      // 共通メニュー
-
-      $(function() {
-        $("#common_nav").load("nav.html");
-        $("#common_footer").load("footer.html");
-      });
-    </script>
-    <script>
-      // カテゴリーボタンのアコーディオン設定
-
-      $(function() {
-        // 親メニュー処理
-        $(".cmn__dropdown-btn").click(function() {
-          // メニュー表示/非表示
-          $(this)
-            .next("#catsDropdown")
-            .slideToggle("fast");
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -171,6 +146,13 @@
       </div>
     </header>
     <section>
+
+            <p class="gotop">
+              <a href="#">
+                <img src="./img/angel-up-thin-64.png" alt="ページトップへ戻る" />
+              </a>
+            </p>
+
       <div id="container">
         <div class="item type1">
           <figure>
@@ -304,6 +286,39 @@
     <section id="main2" class="main2-cont"></section>
 
     <div id="common_footer"></div>
+
+
+
+
+
+
+    <!-- javascript -->
+    <script src="./js/jQuery.js"></script>
+    <!-- <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script> -->
+    <script src="./js/fadein.js"></script>
+    <script>
+      // 共通メニュー
+
+      $(function () {
+        $("#common_nav").load("nav.html");
+        $("#common_footer").load("footer.html");
+      });
+    </script>
+    <script>
+      // カテゴリーボタンのアコーディオン設定
+
+      $(function () {
+        // 親メニュー処理
+        $(".cmn__dropdown-btn").click(function () {
+          // メニュー表示/非表示
+          $(this)
+            .next("#catsDropdown")
+            .slideToggle("fast");
+        });
+      });
+    </script>
+
+
 
     <script src="./js/isotope.pkgd.min.js"></script>
 

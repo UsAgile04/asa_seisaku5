@@ -34,8 +34,8 @@ header {
   display: inline-block;
   margin-bottom: -1px;
   padding: 14px 5px 12px;
-  border-bottom: solid 3px #e86537;
-  color: #e96e43;
+  /* border-bottom: solid 3px #e86537;
+  color: #e96e43; */
   font-size: 14px;
   font-weight: bold;
   line-height: 17px;
@@ -391,7 +391,7 @@ padding: 2% 4%;
 }
 
 .item {
-  margin: 3% 1.5%;
+  margin: 3% 3.5%;
 }
 
 .gallery-info {

@@ -140,8 +140,8 @@ a {
   padding: 5%;
 }
 
-.button {
   /* 全部のボタンの設定*/
+.button {
   display: inline-block;
   padding: 20px 50px;
   margin: 20px 0;
@@ -194,8 +194,10 @@ a {
 /* ページの上部に戻るボタン */
 p.gotop {
   position: fixed;
+  width: 3.5%;
   right: 2%;
   top: 65%;
+  z-index: 10;
 }
 p.gotop a {
   display: block;
@@ -225,6 +227,7 @@ nav ul li a {
   padding: 10px 15px;
   margin: 0;
 }
+
 nav ul li a:hover:nth-child(1) {
   color: grey;
 }
@@ -250,6 +253,8 @@ nav ul li:nth-child(3):hover {
   box-sizing: border-box;
 }
 
+
+
 /* ハンバーガーメニューの中 */
 .menu-trigger {
   display: inline-block;
@@ -259,6 +264,7 @@ nav ul li:nth-child(3):hover {
   vertical-align: middle;
   cursor: pointer;
 }
+/* ハンバーガーメニューのアイコンの軌道 */
 .menu-trigger span {
   display: inline-block;
   box-sizing: border-box;
@@ -291,6 +297,9 @@ nav ul li:nth-child(3):hover {
 .menu-trigger.active span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
+
+/* ハンバーガークリックで表示されるメニュー　　
+top画よりも大きいZ値*/
 #menu_nav {
   height: 100%;
   width: 40%;
@@ -355,14 +364,20 @@ padding-left: 10%;
   flex-grow: 1;
 }
 
+
+
+
 /* wrap, コンテンツ部全体 */
 .contents {
   position: relative;
 }
 
+
+
+
 /* header,TOP画 */
 header {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(19, 19, 19);
 }
 .top_visual {
   padding: 0;
@@ -483,7 +498,7 @@ h2 {
   justify-content: space-around;
 }
 #main2 {
-  margin: 0 10%;
+  margin: 0 3%;
 }
 .main2-item {
   width: 310px;
@@ -513,8 +528,9 @@ figure:hover figcaption {
   bottom: -1.5px;
 }
 
-/* footer,snsとか */
 
+
+/* footer,snsとか */
 #common_footer {
   background-color: rgba(190, 190, 190, 0.322);
 }
@@ -522,7 +538,6 @@ figure:hover figcaption {
   padding-top: 3%;
   margin: 0 7% 0;
 }
-
 .menus {
   float: left;
 }

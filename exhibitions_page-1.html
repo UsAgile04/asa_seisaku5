@@ -20,72 +20,46 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
-    <link rel="stylesheet" href="css/common.css" media="all" />
     <link rel="stylesheet" href="css/exhibitions_page.css" media="all" />
     <link
     href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
     rel="stylesheet"
   />
-
+    <link rel="stylesheet" href="css/common.css" media="all" />
 
     <!-- javascript -->
-    <script src="./js/jQuery.js"></script>
-    <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
-    <script src="./js/jquery.bxslider.min.js"></script>
-    <script src="./js/fadein.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".bxslider").bxSlider({
-          auto: false,
-          mode: "fade"
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      window.onload = function() {
-        document.getElementById("sampleButtonB").onclick = function() {
-          countUp();
-        };
-      };
-      var $count = 0;
-      function countUp() {
-        document.getElementById("sampleOutputB").innerHTML = ++$count;
-      }
-    </script>
-
-    <script>
-      $(function() {
-        $("#common_nav").load("nav.html");
-        $("#common_footer").load("footer.html");
-      });
-    </script>
   </head>
+
+
+
+
 
   <body>
     <div id="common_nav"></div>
+
+
+
     <header>
       <ul class="bxslider">
         <li>
           <img src="./img/IMG_9759.JPG" />
-          <p><br />写真のタイトル<br />日時、撮影機材など</p>
+          <p><br/>写真のタイトル<br/>日時、撮影機材など</p>
         </li>
         <li>
           <img src="./img/IMG_9759.JPG" />
-          <p><br />写真のタイトル<br />日時、撮影機材など</p>
+          <p><br/>写真のタイトル<br/>日時、撮影機材など</p>
         </li>
         <li>
           <img src="./img/IMG_9759.JPG" />
-          <p><br />写真のタイトル<br />日時、撮影機材など</p>
+          <p><br/>写真のタイトル<br/>日時、撮影機材など</p>
         </li>
         <li>
           <img src="./img/IMG_9759.JPG" />
-          <p><br />写真のタイトル<br />日時、撮影機材など</p>
+          <p><br/>写真のタイトル<br/>日時、撮影機材など</p>
         </li>
         <li>
           <img src="./img/IMG_9759.JPG" />
-          <p><br />写真のタイトル<br />日時、撮影機材など</p>
+          <p><br/>写真のタイトル<br/>日時、撮影機材など</p>
         </li>
       </ul>
     </header>
@@ -314,83 +288,195 @@
           </div>
         -->
       </section>
-
-      <section id="main2" class="main2-cont fadein">
-        <div id="half-under" class="wrap">
-          <h2 class="heading">こちらもおすすめ</h2>
-          <ul class="menu-divst2">
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-            <li class="main2-item">
-              <figure>
-                <a href="#">
-                  <img src="img/ph_menu01.jpg" alt="" />
-                  <figcaption><h3>Caption Title</h3></figcaption>
-                </a>
-              </figure>
-              <p class="menu-info">テキストテキストテキストテキストテキスト</p>
-            </li>
-          </ul>
-
-          <div class="six col">
-            <a href="#" class="button" id="button-4">もっと見る</a>
-          </div>
-        </div>
-      </section>
-    </div>
-
+            <section id="main2" class="main2-cont">
+              <h2 class="heading">こちらもおすすめ</h2>
+              <div id="container">
+                <div class="item type1">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">title</p>
+                  <p class="work-info artist-name">name</p>
+                </div>
+                <div class="item type2">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">テキストテキストテキスト</h3>
+                    <p class="work-info artist-name">テキストテキストテキスト</h3>
+                </div>
+                <div class="item type4">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">
+                    </h3>
+                    <p class="work-info artist-name">吉岡　shouhei</h3>
+                </div>
+                <div class="item type5">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+                <div class="item type6">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+                <div class="item type9">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+                <div class="item type8">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+                <div class="item type9">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+                <div class="item type10">
+                  <figure>
+                    <a href="./exhibitions_page-1.html">
+                      <img src="img/ph_menu01.jpg" alt="" />
+                      <figcaption>
+                        <h3>いいね数とか取得</h3>
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p class="work-info gallery-info">the world</h3>
+                    <p class="work-info artist-name">吉岡　計</h3>
+                </div>
+            
+              </div>
+            
+              <!-- 読み込み中のヤツ -->
+              <!-- <div class="cmn__loader-wrap infinite-loader exhibits">
+                <div class="wavy-loader">
+                  <div class="loader"><span></span></div>
+                </div>
+              </div> -->
+            
+              <div class="six col">
+                <a href="#" class="button" id="button-4">もっと見る</a>
+              </div>
+          </section>
+       </div>
     <div id="common_footer"></div>
+
+        <script src="./js/jQuery.js"></script>
+        <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
+        <script src="./js/jquery.bxslider.min.js"></script>
+        <script src="./js/fadein.js"></script>
+        
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".bxslider").bxSlider({
+              auto: false,
+              mode: "fade"
+            });
+          });
+        </script>
+        
+        <script type="text/javascript">　//いいねボタンのカウント
+          window.onload = function () {
+            document.getElementById("sampleButtonB").onclick = function () {
+              countUp();
+            };
+          };
+          var $count = 0;
+          function countUp() {
+            document.getElementById("sampleOutputB").innerHTML = ++$count;
+          }
+        </script>
+        
+        <script>
+          $(function () {
+            $("#common_nav").load("nav.html");
+            $("#common_footer").load("footer.html");
+          });
+        </script>
+
+
+        <script src="./js/isotope.pkgd.min.js"></script>
+        
+        <script>
+          // Isotopeの初期化処理
+          $(function () {
+            var $container = $("#container");
+            $("#container").isotope({
+              itemSelector: ".item",
+              // percentPosition: true,
+              layoutMode: "fitRows",
+              masonry: {
+                columnWidth: 300,
+                isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整するかしないか
+              },
+
+            });
+            // jQueryを使って、クリックイベントを追加
+            $("#filters").on("click", "button", function () {
+              //クリックしたボタンのdata-filterの値を変数に格納します
+              var filterValue = $(this).attr("data-filter");
+              //ここでオプションのfilterを発動させています。
+              //date-filterの値を使ってフィルタリングを行います。
+              $container.isotope({ filter: filterValue });
+            });
+          });
+        </script>
+
   </body>
 </html>
