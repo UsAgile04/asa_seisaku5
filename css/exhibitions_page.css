@@ -6,7 +6,7 @@
 
 /* wrap, コンテンツ部全体 */
 
-/* header,TOP画 */
+/* header部分について*/
 header {
   height: 700px;
   background-color: rgb(19, 19, 19);
@@ -14,6 +14,8 @@ header {
   background-repeat: no-repeat;
 }
 
+
+/* スライダー内の画像について */
 .bxslider img {
   width: 770px;
   left: 0;
@@ -25,6 +27,25 @@ header {
   padding-left: 5%;
   color: rgba(131, 131, 131, 0.795);
 }
+
+
+/* 全画面表示のデザイン */
+.fullscreen-image {
+   cursor: url("./img/icon/plus_cursor.png"), pointer; /* マウスポインタを指定 */
+   display: inline-block;   /* 横方向に並べる指定 */
+   margin: 0px 5px 5px 0px; /* 周囲の余白量(右と下に5pxずつ) */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* main1(展示情報), コンテンツ部1 */
 #main1{
