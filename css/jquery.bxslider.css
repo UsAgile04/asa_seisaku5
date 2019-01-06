@@ -22,6 +22,21 @@ ul.bxslider {
   list-style: none;
 }
 
+/* スライダー内の画像について */
+.bxslider img {
+  max-height: 500px;
+  /* left: 0;
+  right: 0; */
+  margin: auto;
+}
+
+.bxslider li p {
+  font-size: 70%;
+  padding-left: 5%;
+  color: rgba(131, 131, 131, 0.795);
+}
+
+
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
 
@@ -124,7 +139,7 @@ ul.bxslider {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 5;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;

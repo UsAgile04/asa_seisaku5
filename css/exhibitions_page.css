@@ -8,24 +8,10 @@
 
 /* header部分について*/
 header {
-  height: 700px;
+  height: 600px;
   background-color: rgb(19, 19, 19);
   position: relative;
   background-repeat: no-repeat;
-}
-
-
-/* スライダー内の画像について */
-.bxslider img {
-  width: 770px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.bxslider li p {
-  font-size: 70%;
-  padding-left: 5%;
-  color: rgba(131, 131, 131, 0.795);
 }
 
 

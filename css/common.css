@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
+
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -99,6 +100,7 @@ section {
 html {
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   color: rgb(65, 65, 65);
   line-height: 1.5;
@@ -106,15 +108,18 @@ body {
   letter-spacing: 0.065em;
 
 }
+
 img {
   border: 0;
   max-width: 100%;
   height: auto;
 }
+
 ul,
 ol {
   list-style-type: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -124,13 +129,16 @@ img,
 input,
 select,
 textarea {
-  vertical-align: middle; /* 画像、入力箇所の行のなかでのテキストや画像などの縦方向の揃え位置を指定する */
+  vertical-align: middle;
+  /* 画像、入力箇所の行のなかでのテキストや画像などの縦方向の揃え位置を指定する */
 }
+
 a {
   text-decoration: none;
   transition: 0.5s;
   color: azure;
 }
+
 /* a:hover img {
   opacity: 0.7;
   transition: 0.6s;
@@ -140,7 +148,7 @@ a {
   padding: 5%;
 }
 
-  /* 全部のボタンの設定*/
+/* 全部のボタンの設定*/
 .button {
   display: inline-block;
   padding: 20px 50px;
@@ -199,6 +207,7 @@ p.gotop {
   top: 65%;
   z-index: 10;
 }
+
 p.gotop a {
   display: block;
 }
@@ -213,13 +222,15 @@ p.gotop a {
 #gnav {
   padding: 0;
   margin: 0;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(19, 19, 19);
 }
+
 nav ul {
   display: flex;
   padding: 0px;
   margin: 0;
 }
+
 nav ul li a {
   text-align: center;
   /* line-height: 3em; */
@@ -231,13 +242,16 @@ nav ul li a {
 nav ul li a:hover:nth-child(1) {
   color: grey;
 }
+
 nav ul li a:hover:nth-child(3) {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(19, 19, 19);
 }
+
 nav ul li:nth-child(3):hover {
   opacity: 0.7;
   transition: 0.3s;
 }
+
 #menu_head {
   width: 100%;
   display: flex;
@@ -264,6 +278,7 @@ nav ul li:nth-child(3):hover {
   vertical-align: middle;
   cursor: pointer;
 }
+
 /* ハンバーガーメニューのアイコンの軌道 */
 .menu-trigger span {
   display: inline-block;
@@ -274,26 +289,33 @@ nav ul li:nth-child(3):hover {
   height: 4px;
   background-color: rgb(255, 255, 255);
   transition: all 0.5s 0.2s;
-  z-index: 4;
+  z-index: 11;
 }
+
 .menu-trigger.active span {
   background-color: #fff;
 }
+
 .menu-trigger span:nth-of-type(1) {
   top: 0;
 }
+
 .menu-trigger.active span:nth-of-type(1) {
   transform: translateY(12px) rotate(-45deg);
 }
+
 .menu-trigger span:nth-of-type(2) {
   top: 12px;
 }
+
 .menu-trigger.active span:nth-of-type(2) {
   opacity: 0;
 }
+
 .menu-trigger span:nth-of-type(3) {
   bottom: 0;
 }
+
 .menu-trigger.active span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
@@ -309,35 +331,43 @@ top画よりも大きいZ値*/
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 10;
 }
-.menu_nav-wrap{
+
+.menu_nav-wrap {
   text-align: left;
 }
-.menu_nav-wrap a{
-display: flex;
-} 
-.menu_nav-wrap a:hover{
+
+.menu_nav-wrap a {
+  display: flex;
+}
+
+.menu_nav-wrap a:hover {
   transition: 0.3s;
   opacity: 1;
 }
-#nav_main-menu{
-    padding:10% 35% 10% 10%;
-    font-size: 1.2em;
-    border-bottom: black 1px solid;
+
+#nav_main-menu {
+  padding: 10% 35% 10% 10%;
+  font-size: 1.2em;
+  border-bottom: black 1px solid;
 }
-#nav_sub-menu{
+
+#nav_sub-menu {
   font-size: 0.8em;
   padding-left: 7%;
   margin-top: 5%;
 }
-#nav_sub-menu li:nth-child(2){
-padding-left: 10%;
+
+#nav_sub-menu li:nth-child(2) {
+  padding-left: 10%;
 }
-#sns_menu-list{
+
+#sns_menu-list {
   padding-left: 8%;
-  padding-top:5%;
+  padding-top: 5%;
 }
+
 /* #menu_nav ul {
   padding: 5% 10%;
 }
@@ -347,20 +377,24 @@ padding-left: 10%;
 .nav_sns-menu:hover {
   opacity: 1;
 }
+
 .nav_sns-menu a:hover img {
   border-radius: 50%;
   transition: 0.23s;
   opacity: 0.7;
 }
+
 .gnav-item img {
   width: 26px;
   height: 26px;
 }
+
 .item1 {
   font-size: 20px;
 }
+
 .item2 {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(19, 19, 19);
   flex-grow: 1;
 }
 
@@ -379,34 +413,39 @@ padding-left: 10%;
 header {
   background-color: rgb(19, 19, 19);
 }
+
 .top_visual {
   padding: 0;
 }
+
 .top_visual img {
   position: relative;
   width: 100vw;
   height: 95vh;
   object-fit: cover;
 }
+
 #toptext {
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 10%;
   font-family: serif;
   text-align: center;
   font-size: 450%;
-  font-family:'Sawarabi Mincho', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
 
 }
+
 .title h1 {
-  font-family:'Sawarabi Mincho', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 10%;
   color: rgb(255, 255, 255);
   font-size: 700%;
 }
+
 .title h2 {
   position: absolute;
   top: 55%;
@@ -419,36 +458,43 @@ header {
 #main1 {
   background-color: rgba(212, 212, 212, 0.226);
 }
+
 h2 {
   text-align: center;
   margin-bottom: 5%;
   padding-top: 6%;
 }
+
 .menu-divst1 {
   margin: 0 5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .main1-item {
   display: inline-block;
   position: relative;
   width: 25%;
 }
+
 .main1-item a:hover {
   opacity: 1;
   -webkit-animation: flash 0.7s;
   animation: flash 0.7s;
 }
+
 .main1-item a img {
   filter: gray;
   -webkit-filter: grayscale(100%);
 }
+
 .main1-item a img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
   transition: 0.2s;
 }
+
 /* .menu-text:hover {
   -webkit-filter: grayscale(0%);
 } */
@@ -456,37 +502,45 @@ h2 {
   0% {
     opacity: 0.9;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes flash {
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 /* メインメニューの文字 */
-.menu-text {
+/* .menu-text {
   position: absolute;
   top: 27%;
   color: rgb(255, 255, 255);
-}
+} */
+
 .left-one {
   left: 33%
 }
+
 .middle-one {
   left: 43%
 }
+
 .right-one {
   left: 30%
 }
+
 .menu-info {
+  text-align: center;
   margin-top: 8%;
-  font-size: 0.9em;
+  font-size: 1.23em;
 }
 
 /* main2, コンテンツ部2 */
@@ -497,22 +551,27 @@ h2 {
   align-content: space-around;
   justify-content: space-around;
 }
+
 #main2 {
   margin: 0 3%;
 }
+
 .main2-item {
   width: 310px;
   text-align: center;
   margin-bottom: 3%;
 }
+
 .main2-item .menu-info {
   font-size: 120%;
 }
+
 figure {
   position: relative;
   overflow: hidden;
   width: 300px;
 }
+
 figcaption {
   position: absolute;
   bottom: -60px;
@@ -524,6 +583,7 @@ figcaption {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 figure:hover figcaption {
   bottom: -1.5px;
 }
@@ -534,17 +594,21 @@ figure:hover figcaption {
 #common_footer {
   background-color: rgba(190, 190, 190, 0.322);
 }
+
 #under {
   padding-top: 3%;
   margin: 0 7% 0;
 }
+
 .menus {
   float: left;
 }
+
 .foot__menu-link {
   color: rgba(36, 36, 36, 0.651);
   margin: 0 2.5%;
 }
+
 .foot__menu-link:hover {
   color: rgba(145, 145, 145, 0.705);
   transition: 0s;
@@ -553,39 +617,48 @@ figure:hover figcaption {
 .foot__submenu-link-wrap {
   margin-top: 3.5%;
 }
+
 .foot__submenu-link {
   color: rgba(145, 145, 145, 0.705);
   margin: 0 2.5% 0;
   font-size: 0.8em;
 }
+
 .foot__submenu-link:hover {
   color: black;
   transition: 0s;
 }
+
 .sns {
   float: right;
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .sns img {
   width: 32px;
   height: 32px;
 }
+
 .sns img:hover {
   background-color: gray;
   border-radius: 50%;
   transition: 0.23s;
 }
+
 .icon-twitter {
   margin: 0 10px;
 }
+
 .icon-fb {
   margin: 0 10px;
 }
+
 .icon-insta {
   margin: 0 10px;
 }
+
 .copyright {
   margin-top: 7%;
   clear: both;

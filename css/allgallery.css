@@ -34,10 +34,11 @@ header {
   display: inline-block;
   margin-bottom: -1px;
   padding: 14px 5px 12px;
-  /* border-bottom: solid 3px #e86537;
-  color: #e96e43; */
+  /* border-bottom: solid 3px #e86537; */
+  /* color: #e96e43; */
+  color: #333;
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 17px;
   text-decoration: none;
   cursor: default;

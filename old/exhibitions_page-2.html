@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>日常のオトモ</title>
+    <title>持ちモノ写真展</title>
     <meta
       name="description"
       content="授業内課題として、日用品を過度におしゃれに紹介するWebギャラリー。"
@@ -15,55 +15,55 @@
     <link
       rel="icon"
       sizes="192x192"
-      href="./iconmonstr-photo-camera-13-48 (1).png"
+      href="./img/icon/シャッターアイコン4 (2).png"
     />
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
     <link rel="stylesheet" href="css/common.css" media="all" />
     <link rel="stylesheet" href="css/exhibitions_page.css" media="all" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
+    rel="stylesheet"
+  />
 
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
     <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
     <script src="./js/fadein.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.bxslider').bxSlider({
+        $(".bxslider").bxSlider({
           auto: false,
-          mode: 'fade'
-        })
-      })
+          mode: "fade"
+        });
+      });
     </script>
 
     <script type="text/javascript">
       window.onload = function() {
-        document.getElementById('sampleButtonB').onclick = function() {
-          countUp()
-        }
-      }
-      var $count = 0
+        document.getElementById("sampleButtonB").onclick = function() {
+          countUp();
+        };
+      };
+      var $count = 0;
       function countUp() {
-        document.getElementById('sampleOutputB').innerHTML = ++$count
+        document.getElementById("sampleOutputB").innerHTML = ++$count;
       }
+    </script>
+
+    <script>
+      $(function() {
+        $("#common_nav").load("nav.html");
+        $("#common_footer").load("footer.html");
+      });
     </script>
   </head>
 
   <body>
-    <nav>
-      <ul id="gnav">
-        <li class="gnav-item item1"><a href="./index.html">日常のオト２</a></li>
-        <li class="gnav-item item2"></li>
-        <li class="gnav-item item3">
-          <a href="#"><img src="img/icon/kensaku.png"/></a>
-        </li>
-        <li class="gnav-item item4">
-          <a href="#"><img src="./img/icon/iconmonstr-menu-1-64.png"/></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /nav -->
+    <div id="common_nav"></div>
     <header>
       <ul class="bxslider">
         <li>
@@ -390,52 +390,6 @@
       </section>
     </div>
 
-    <footer id="footer">
-      <div id="under" class="wrap">
-        <div class="menus">
-          <ul class="foot__menu">
-            <li class="foot__menu-link-wrap">
-              <nobr>
-                <a class="foot__menu-link" href="#">お知らせ</a
-                ><a class="foot__menu-link" href="#">スペシャルサンクス</a
-                ><a class="foot__menu-link" href="./site_introduction.html"
-                  >NICHIJOU</a
-                ><a class="foot__menu-link" href="#">お問い合わせ</a>
-              </nobr>
-            </li>
-            <li class="foot__submenu-link-wrap">
-              <nobr>
-                <a class="foot__submenu-link" href="#">利用規約</a
-                ><a class="foot__submenu-link" href="#">プライバシーポリシー</a
-                ><a class="foot__submenu-link" href="#"
-                  >特定商取引法に基づく表示</a
-                >
-              </nobr>
-            </li>
-          </ul>
-        </div>
-
-        <div class="sns">
-          <div class="icon-twitter">
-            <a href="https://twitter.com/?lang=ja"
-              ><img src="img/icon/iconmonstr-twitter-3-32.png" alt=""
-            /></a>
-          </div>
-          <div class="icon-fb">
-            <a href="https://www.facebook.com/sandwichman1974/"
-              ><img src="img/icon/facebook-3-32.png" alt=""
-            /></a>
-          </div>
-          <div class="icon-insta">
-            <a href="https://www.instagram.com/instagramjapan/?hl=ja"
-              ><img src="img/icon/instagram-1-32.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <small>Copyrights (c) yano All Rights Reserved.</small>
-      </div>
-    </footer>
+    <div id="common_footer"></div>
   </body>
 </html>
