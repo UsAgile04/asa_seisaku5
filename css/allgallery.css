@@ -388,11 +388,12 @@ header {
 /* ギャラリー一覧のデザイン */
 #container{
 text-align: center;
-padding: 2% 4%;
+padding: 2% 1%;
 }
 
 .item {
-  margin: 3% 3.5%;
+  min-height: 200px;
+  margin: 3% 0 0 5.5%;
 }
 
 .gallery-info {
