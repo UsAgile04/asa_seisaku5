@@ -19,18 +19,10 @@
   <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
 
-
-
 </head>
-
-
-
-
 
 <body>
   <div id="common_nav"></div>
-
-
 
   <header>
 <ul class="bxslider">
@@ -444,10 +436,48 @@
   </script>
 
 
+    <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
+    <script src="./js/isotope.pkgd.min.js"></script>
+    
+    <script>
+      $(function () {
+        //読み込み完了後0.2秒待ってからisotopeする
+        var cnt = 0;
+        var waiting = setInterval(function () {
+          if (cnt == 1) {
+            var $container = $("#container");
 
-  <script src="./js/isotope.pkgd.min.js"></script>
+            $("#container").isotope({
+              // 以下、isotopeのオプション
+              itemSelector: ".item",
+              // percentPosition: true,
+              layoutMode: "masonry",
+              masonry: {
+                columnWidth: 220
+                // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+              }
+            });
 
-  <script>
+            // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
+            $("#filters").on("click", "button", function () {
+              //クリックしたボタンのdata-filterの値を変数に格納
+              var filterValue = $(this).attr("data-filter");
+              //ここでオプションのfilterを発動
+              //date-filterの値を使ってフィルタリング
+              $container.isotope({
+                filter: filterValue
+              });
+            });
+
+            // cntが1でないならば、0.2秒（200ms）waitする
+            clearInterval(waiting);
+          }
+          cnt++;
+        }, 200);
+      });
+    </script>
+
+  <!-- <script>
     // Isotopeの初期化処理
     $(function () {
       var $container = $("#container");
@@ -471,7 +501,7 @@
         });
       });
     });
-  </script>
+  </script> -->
 
 </body>
 

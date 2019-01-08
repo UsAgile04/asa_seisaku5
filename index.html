@@ -1,266 +1,281 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>持ちモノ写真展</title>
+    <meta
+      name="description"
+      content="授業内課題として、日用品を過度におしゃれに紹介するWebギャラリー。"
+    />
+    <meta name="keywords" content="課題制作,Webギャラリー,日用品,写真" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <title>持ちモノ写真展</title>
-  <meta name="description" content="授業内課題として、日用品を過度におしゃれに紹介するWebギャラリー。" />
-  <meta name="keywords" content="課題制作,Webギャラリー,日用品,写真" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- icon -->
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="./img/icon/シャッターアイコン4 (2).png"
+    />
 
-  <!-- icon -->
-  <link rel="icon" sizes="192x192" href="./img/icon/シャッターアイコン4 (2).png" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
+    <link rel="stylesheet" href="css/common.css" media="all" />
+    <link rel="stylesheet" href="css/allgallery.css" media="all" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
-  <link rel="stylesheet" href="css/common.css" media="all" />
-  <link rel="stylesheet" href="css/allgallery.css" media="all" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese" rel="stylesheet" />
-</head>
+  <body>
+    <div id="common_nav"></div>
 
-<body>
-  <div id="common_nav"></div>
+    <header>
+      <div class="top_visual">
+        <img
+          src="./img/item/ランタン.jpg"
+          alt="トップ画面にふさわしい感じの画像"
+        />
+      </div>
+      <div class="title">
+        <p id="toptext">あなたの</p>
+        <h1>持ちモノ写真展</h1>
+        <h2>Now, please exhibit your ITEMS to us !</h2>
+      </div>
+    </header>
 
-  <header>
-    <div class="top_visual">
-      <img src="./img/item/ランタン.jpg" alt="トップ画面にふさわしい感じの画像" />
-    </div>
-    <div class="title">
-      <p id="toptext">あなたの</p>
-      <h1>持ちモノ写真展</h1>
-      <h2> Now, please exhibit your ITEMS to us !</h2>
-    </div>
-  </header>
+    <div class="contents">
+      <p class="gotop">
+        <a href="#">
+          <img src="./img/angel-up-thin-64.png" alt="ページトップへ戻る" />
+        </a>
+      </p>
+      <section id="main1" class="main1-cont">
+        <div id="half-top" class="wrap">
+          <h2 class="heading">ようこそ！</h2>
+          <ul class="menu-divst1">
+            <li class="main1-item">
+              <a href="./site_introduction.html">
+                <img src="img/item/カフェとPC.jpg" alt="" />
+                <!-- <h4 class="menu-text left-one">このサイトは？</h4> -->
+              </a>
+              <p class="menu-info">このサイトは？</p>
+            </li>
 
-  <div class="contents">
-    <p class="gotop">
-      <a href="#">
-        <img src="./img/angel-up-thin-64.png" alt="ページトップへ戻る" />
-      </a>
-    </p>
-    <section id="main1" class="main1-cont">
-      <div id="half-top" class="wrap">
-        <h2 class="heading">ようこそ！</h2>
-        <ul class="menu-divst1">
-          <li class="main1-item">
-            <a href="./site_introduction.html">
-              <img src="img/item/カフェとPC.jpg" alt="" />
-              <!-- <h4 class="menu-text left-one">このサイトは？</h4> -->
-            </a>
-            <p class="menu-info">このサイトは？</p>
-          </li>
+            <li class="main1-item">
+              <a href="#">
+                <img src="img/item/メイン_感想.jpg" alt="" />
+                <!-- <h4 class="menu-text middle-one">感想</h4> -->
+              </a>
+              <p class="menu-info">感想</p>
+            </li>
 
-          <li class="main1-item">
-            <a href="#">
-              <img src="img/item/メイン_感想.jpg" alt="" />
-              <!-- <h4 class="menu-text middle-one">感想</h4> -->
-            </a>
-<p class="menu-info">感想</p>
-          </li>
+            <li class="main1-item">
+              <a href="#">
+                <img src="img/item/メイン_撮影風景.jpg" alt="" />
+                <!-- <h4 class="menu-text right-one">作業風景、撮影仲間</h4> -->
+              </a>
+              <p class="menu-info">作業風景、自己紹介</p>
+            </li>
+          </ul>
+          <div class="six col">
+            <a href="./allgallery.html" class="button" id="button-4"
+              >そんなことより写真集を見る</a
+            >
+          </div>
+        </div>
+      </section>
 
-          <li class="main1-item">
-            <a href="#">
-              <img src="img/item/メイン_撮影風景.jpg" alt="" />
-              <!-- <h4 class="menu-text right-one">作業風景、撮影仲間</h4> -->
-            </a>
-<p class="menu-info">作業風景、自己紹介
+      <section id="main2" class="main2-cont">
+        <h2 class="heading">こちらもおすすめ</h2>
+        <div id="container">
+          <div class="item type1">
+            <figure>
+              <a href="./exhibitions_page-1 - コピー.html">
+                <img src="img/item/キャンプ食器.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">ここに個展タイトルなど</p>
+            <p class="work-info artist-name">
+              展示主、撮影者、ユーザーネームなど
             </p>
-          </li>
-        </ul>
+          </div>
+
+          <div class="item type2">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/lubitel_1.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">My camera</p>
+            <p class="work-info artist-name">romonomawasimono</p>
+          </div>
+          <div class="item type9">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/amp.jpeg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+
+          <div class="item type7">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/ネコとスプーン.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type9">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/たわし.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+
+          <div class="item type6">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/ハンドスピナー.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type6">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/モーメント１.JPG" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type1">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/猪.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type9">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/釣り具.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type9">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/uranaiFTHG2914_TP_V.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+          <div class="item type9">
+            <figure>
+              <a href="./exhibitions_page-1.html">
+                <img src="img/item/電球.jpg" alt="" />
+                <figcaption><h3>いいね数とか取得</h3></figcaption>
+              </a>
+            </figure>
+            <p class="work-info gallery-info">title</p>
+            <p class="work-info artist-name">creator name</p>
+          </div>
+        </div>
+
+        <!-- 読み込み中のヤツ -->
+        <div class="cmn__loader-wrap infinite-loader exhibits">
+          <div class="wavy-loader">
+            <div class="loader"><span></span></div>
+          </div>
+        </div>
+
         <div class="six col">
-          <a href="./allgallery.html" class="button" id="button-4">そんなことより写真集を見る</a>
+          <a href="./allgallery.html" class="button" id="button-4"
+            >もっと見る</a
+          >
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
+    <div id="common_footer"></div>
 
-    <section id="main2" class="main2-cont">
-      <h2 class="heading">こちらもおすすめ</h2>
-      <div id="container">
+    <!-- javascript -->
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/fadein.js"></script>
+    <script>
+      $(function() {
+        $("#common_nav").load("nav.html");
+        $("#common_footer").load("footer.html");
+      });
+    </script>
 
-        <div class="item type1">
-          <figure>
-            <a href="./exhibitions_page-1 - コピー.html">
-              <img src="img/item/キャンプ食器.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">ここに個展タイトルなど</p>
-          <p class="work-info artist-name">展示主、撮影者、ユーザーネームなど</p>
-        </div>
+    <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
+    <script src="./js/isotope.pkgd.min.js"></script>
 
-        <div class="item type2">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/lubitel_1.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">My camera</p>
-          <p class="work-info artist-name">romonomawasimono</p>
-        </div>
-<div class="item type9">
-  <figure>
-    <a href="./exhibitions_page-1.html">
-      <img src="img/item/amp.jpeg" alt="" />
-      <figcaption>
-        <h3>いいね数とか取得</h3>
-      </figcaption>
-    </a>
-  </figure>
-  <p class="work-info gallery-info">title</p>
-  <p class="work-info artist-name">creator name</p>
-</div>
+    <script>
+      $(function() {
+        //読み込み完了後0.2秒待ってからisotopeする
+        var cnt = 0;
+        var waiting = setInterval(function() {
+          if (cnt == 1) {
+            var $container = $("#container");
 
-        <div class="item type7">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/ネコとスプーン.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
-        <div class="item type9">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/たわし.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
+            $("#container").isotope({
+              // 以下、isotopeのオプション
+              itemSelector: ".item",
+              // percentPosition: true,
+              layoutMode: "masonry",
+              masonry: {
+                columnWidth: 220
+                // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+              }
+            });
 
-        <div class="item type6">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/ハンドスピナー.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
-        <div class="item type6">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/モーメント１.JPG" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
-        <div class="item type1">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/猪.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
-        <div class="item type9">
-          <figure>
-            <a href="./exhibitions_page-1.html">
-              <img src="img/item/釣り具.jpg" alt="" />
-              <figcaption>
-                <h3>いいね数とか取得</h3>
-              </figcaption>
-            </a>
-          </figure>
-          <p class="work-info gallery-info">title</p>
-          <p class="work-info artist-name">creator name</p>
-        </div>
-<div class="item type9">
-  <figure>
-    <a href="./exhibitions_page-1.html">
-      <img src="img/item/uranaiFTHG2914_TP_V.jpg" alt="" />
-      <figcaption>
-        <h3>いいね数とか取得</h3>
-      </figcaption>
-    </a>
-  </figure>
-  <p class="work-info gallery-info">title</p>
-  <p class="work-info artist-name">creator name</p>
-</div>
-<div class="item type9">
-  <figure>
-    <a href="./exhibitions_page-1.html">
-      <img src="img/item/電球.jpg" alt="" />
-      <figcaption>
-        <h3>いいね数とか取得</h3>
-      </figcaption>
-    </a>
-  </figure>
-  <p class="work-info gallery-info">title</p>
-  <p class="work-info artist-name">creator name</p>
-</div>
+            // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
+            $("#filters").on("click", "button", function() {
+              //クリックしたボタンのdata-filterの値を変数に格納
+              var filterValue = $(this).attr("data-filter");
+              //ここでオプションのfilterを発動
+              //date-filterの値を使ってフィルタリング
+              $container.isotope({
+                filter: filterValue
+              });
+            });
 
+            // cntが1でないならば、0.2秒（200ms）waitする
+            clearInterval(waiting);
+          }
+          cnt++;
+        }, 200);
+      });
+    </script>
 
-
-
-      </div>
-
-      <!-- 読み込み中のヤツ -->
-      <div class="cmn__loader-wrap infinite-loader exhibits">
-        <div class="wavy-loader">
-          <div class="loader"><span></span></div>
-        </div>
-      </div>
-
-      <div class="six col">
-        <a href="./allgallery.html" class="button" id="button-4">もっと見る</a>
-      </div>
-    </section>
-  </div>
-
-
-
-
-  <div id="common_footer"></div>
-
-
-
-
-
-
-
-
-
-
-
-  <!-- javascript -->
-  <script src="./js/jQuery.js"></script>
-  <script src="./js/fadein.js"></script>
-  <script>
-    $(function () {
-      $('#common_nav').load('nav.html')
-      $('#common_footer').load('footer.html')
-    })
-  </script>
-
-
-  <script src="./js/isotope.pkgd.min.js"></script>
-
+    <!-- 旧isotope設定
   <script>
     // Isotopeの初期化処理
     $(function () {
@@ -285,8 +300,6 @@
         });
       });
     });
-  </script>
-
-</body>
-
+  </script> -->
+  </body>
 </html>

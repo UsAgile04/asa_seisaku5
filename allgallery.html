@@ -70,16 +70,17 @@
             <form
               class="head__discover-search-form"
               id="exhibition_search"
-              action="/exhibitions/editors"
+              action=""
               accept-charset="UTF-8"
-              method="get"
+              method="post"
             >
               <input name="utf8" type="hidden" value="&#x2713;" />
-              <div class="head__discover-search-input-wrap">
+              <div class="head__discover-search-input-wrap filter_keyword">
                 <div
                   class="svg-search icon-svg_txt_search"
                   onclick="submitTextSearchForm()"
                 ></div>
+                <!-- <input type="text" name="filter_free" size="40" />&nbsp; -->
                 <input
                   class="head__discover-search-input allow_submit"
                   placeholder="個展名、タグ、ユーザー名"
@@ -87,12 +88,12 @@
                   name="q[title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont]"
                   id="q_title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont"
                 />
-                <a
+                <!-- <a
                   class="head__discover-search-cancel "
                   href="/exhibitions/editors?q="
                 >
                   <div class="svg-cancel icon-svg_close"></div>
-                </a>
+                </a> -->
               </div>
               <input
                 type="submit"
@@ -284,57 +285,71 @@
 
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
-    <!-- <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script> -->
     <script src="./js/fadein.js"></script>
     <script>
-      // 共通メニュー
-
+      // 共通のページパーツ
       $(function() {
-        $('#common_nav').load('nav.html')
-        $('#common_footer').load('footer.html')
-      })
+        $("#common_nav").load("nav.html");
+        $("#common_footer").load("footer.html");
+      });
     </script>
+
+    <!-- <script src="./js/Underscore.js"></script>
+
+    <script src="./js/script.js"></script> -->
 
     <script>
       // カテゴリーボタンのアコーディオン設定
-
       $(function() {
         // 親メニュー処理
-        $('.cmn__dropdown-btn').click(function() {
+        $(".cmn__dropdown-btn").click(function() {
           // メニュー表示/非表示
           $(this)
-            .next('#catsDropdown')
-            .slideToggle('fast')
-        })
-      })
+            .next("#catsDropdown")
+            .slideToggle("fast");
+        });
+      });
     </script>
 
+    <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
     <script src="./js/isotope.pkgd.min.js"></script>
 
     <script>
-      // Isotopeの初期化処理
       $(function() {
-        var $container = $('#container')
-        $('#container').isotope({
-          itemSelector: '.item',
-          // percentPosition: true,
-          // layoutMode: "fitRows",
-          masonry: {
-            columnWidth:240,
-            isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+        //読み込み完了後0.2秒待ってからisotopeする
+        var cnt = 0;
+        var waiting = setInterval(function() {
+          if (cnt == 1) {
+            var $container = $("#container");
+
+            $("#container").isotope({
+              // 以下、isotopeのオプション
+              itemSelector: ".item",
+              // percentPosition: true,
+              layoutMode: "masonry",
+              masonry: {
+                columnWidth: 220
+                // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+              }
+            });
+
+            // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
+            $("#filters").on("click", "button", function() {
+              //クリックしたボタンのdata-filterの値を変数に格納
+              var filterValue = $(this).attr("data-filter");
+              //ここでオプションのfilterを発動
+              //date-filterの値を使ってフィルタリング
+              $container.isotope({
+                filter: filterValue
+              });
+            });
+
+            // cntが1でないならば、0.2秒（200ms）waitする
+            clearInterval(waiting);
           }
-        })
-        // jQueryを使って、クリックイベントを追加
-        $('#filters').on('click', 'button', function() {
-          //クリックしたボタンのdata-filterの値を変数に格納します
-          var filterValue = $(this).attr('data-filter')
-          //ここでオプションのfilterを発動させています。
-          //date-filterの値を使ってフィルタリングを行います。
-          $container.isotope({
-            filter: filterValue
-          })
-        })
-      })
+          cnt++;
+        }, 200);
+      });
     </script>
   </body>
 </html>
