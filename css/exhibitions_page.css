@@ -516,7 +516,7 @@ opacity: 1;
 /* ギャラリー一覧のデザイン */
 #container{
 text-align: center;
-padding: 2% 4%;
+padding: 2% 0 0 2%;
 }
 
 .item {

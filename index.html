@@ -275,31 +275,5 @@
       });
     </script>
 
-    <!-- 旧isotope設定
-  <script>
-    // Isotopeの初期化処理
-    $(function () {
-      var $container = $("#container");
-      $("#container").isotope({
-        itemSelector: ".item",
-        // percentPosition: true,
-        masonry: {
-          columnWidth: 50,
-          isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
-        },
-
-      });
-      // jQueryを使って、クリックイベントを追加
-      $("#filters").on("click", "button", function () {
-        //クリックしたボタンのdata-filterの値を変数に格納
-        var filterValue = $(this).attr("data-filter");
-        //ここでオプションのfilterを発動
-        //date-filterの値でフィルタリング
-        $container.isotope({
-          filter: filterValue
-        });
-      });
-    });
-  </script> -->
   </body>
 </html>

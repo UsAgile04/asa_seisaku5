@@ -429,12 +429,25 @@ padding: 2% 1%;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* ウェーブ */
 @media (max-width: 1000px) {
   .lp__content-wrap .campaign-banner__wrap {
     padding-top: 30px;
   }
 }
+
+
 .cmn__loader-wrap {
   position: relative;
 }
@@ -446,13 +459,13 @@ padding: 2% 1%;
   z-index: -1;
   display: block;
   content: "";
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
-/* ページの読み込み前は、うごめく */
+/* ページの読み込み中は、うごめく */
 .cmn__loader-wrap .wavy-loader {
-  display: none;
-  opacity: 0;
+  /* display: none; */
+  /* opacity: 0; */
   position: absolute;
   top: 0;
   left: 0;
@@ -471,7 +484,7 @@ padding: 2% 1%;
   transition: ease-out 0.2s;
 }
 
-/* ウェーブの動きの挙動*/
+/* ウェーブの挙動*/
 .cmn__loader-wrap .wavy-loader .loader {
   position: absolute;
   top: 50%;

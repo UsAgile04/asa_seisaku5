@@ -544,17 +544,17 @@ h2 {
 }
 
 /* main2, コンテンツ部2 */
-.menu-divst2 {
+/* .menu-divst2 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: space-around;
   justify-content: space-around;
-}
+} */
 
-#main2 {
+/* #main2 {
   margin: 0 3%;
-}
+} */
 
 .main2-item {
   width: 310px;
