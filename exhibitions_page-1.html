@@ -74,7 +74,8 @@
             <br />xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />sony α6000/ISO
             120xxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
-        </li>        <li>
+        </li>
+        <li>
           <a rel="group01" href="./img/item/lubitel_1.jpg" data-fancybox>
             <img src="./img/item/lubitel_1.jpg"
           /></a>
@@ -111,7 +112,6 @@
             120xxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
         </li>
-
       </ul>
     </header>
 
@@ -202,14 +202,58 @@
               </div>
 
               <!-- SNS共有メニュー -->
-              <div class="exhibition-show__info-foot-menu-btn">
+              <div
+                id="shareDropdownBtn"
+                class="mod_dropnavi ex_clearfix cmn__share-dropdown-btn"
+              >
+                <div class="parent">
+                  <a href="javascript:void(0)"
+                    ><img src="./img/icon/sns_menu.png"
+                  /></a>
+                  <div class="mod_dropnavi_child">
+                    <ul
+                      class="exhibition-show__info-foot-menu cmn__share-dropdown-menu cmn__dropdown-wrap"
+                      id="shareDropdown"
+                    >
+                      <li class="exhibition-show__info-foot-menu-item share">
+                        <a
+                          target="_blank"
+                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in fb"
+                          title="Facebookで共有"
+                          >facebook</a
+                        >
+                      </li>
+                      <li class="exhibition-show__info-foot-menu-item share">
+                        <a
+                          target="_blank"
+                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in twt"
+                          title="twitterで共有"
+                          >twitter</a
+                        >
+                      </li>
+                      <li class="exhibition-show__info-foot-menu-item share">
+                        <a
+                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in ggl"
+                          title="instagramで共有"
+                          >instagram</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- /mod_dropnavi_child -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="exhibition-show__info-foot-menu-btn">
                 <div
                   class="exhibition-show__info-foot-dropdown-btn cmn__share-dropdown-btn cmn__dropdown-btn"
                   id="shareDropdownBtn"
                 >
                   <div class="txt">Menu</div>
                   <div class="svg icon-svg_menu">
-                    <img src="./img/icon/sns_menu.png" />
+                    <a href="javascript:void(0)">
+                      <img class="hukidashi" src="./img/icon/sns_menu.png" />
+                    </a>
                   </div>
                 </div>
                 <ul
@@ -221,8 +265,6 @@
                       target="_blank"
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in fb"
                       title="Facebookで共有"
-                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
-                      href="http://www.facebook.com/dialog/feed?app_id=1684914615163108&amp;link=https://coten.pics/exhibitions/6759&amp;picture=https://s3-ap-northeast-1.amazonaws.com/coten.images/picture/6759/s_pic2fd24a67-a997-42b0-afba-7594f0facc03.jpg&amp;name=Life%20is%20Beautiful%20027 by %E6%9D%BE%E4%B8%8B%20%E3%83%9E%E3%82%B5%E3%82%AD - 個展&amp;caption=coten&amp;description=松下 マサキの個展。開催期間は2018年12月17日(月) 21時28分まで。&amp;display=page"
                       >facebook</a
                     >
                   </li>
@@ -231,8 +273,6 @@
                       target="_blank"
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in twt"
                       title="twitterで共有"
-                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
-                      href="https://twitter.com/intent/tweet?text=Life%20is%20Beautiful%20027 by %E6%9D%BE%E4%B8%8B%20%E3%83%9E%E3%82%B5%E3%82%AD - 個展%0a&amp;url=https://coten.pics/exhibitions/6759&amp;hashtags=coten"
                       >twitter</a
                     >
                   </li>
@@ -240,8 +280,6 @@
                     <a
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in ggl"
                       title="instagramで共有"
-                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
-                      href="https://plus.google.com/share?url=https://coten.pics/exhibitions/6759"
                       >instagram</a
                     >
                   </li>
@@ -249,7 +287,7 @@
                     class="exhibition-show__info-foot-menu-btn-wrap cmn__share-dropdown-menu-btn-wrap"
                   ></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <!--
               <div class="comments__list-wrap" id="commentListWrap">
@@ -457,7 +495,6 @@
             <p class="work-info gallery-info">title</p>
             <p class="work-info artist-name">creator name</p>
           </div>
-          
         </div>
 
         <!-- 読み込み中のヤツ -->
@@ -476,12 +513,12 @@
 
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
-    <script src="./参考/application-628903e3a09a310c043fcb01cdc70caf130d6c9ee1dc39827619.js"></script>
+    <script src="./js/dropdown_menu.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
     <script src="./js/fadein.js"></script>
 
     <script type="text/javascript">
-    // スライドショー設定
+      // スライドショー設定
       $(document).ready(function() {
         $(".bxslider").bxSlider({
           auto: false,
@@ -562,31 +599,5 @@
         }, 200);
       });
     </script>
-
-    <!-- <script>
-        // Isotopeの初期化処理
-        $(function () {
-          var $container = $("#container");
-          $("#container").isotope({
-            itemSelector: ".item",
-            // percentPosition: true,
-            masonry: {
-              columnWidth: 50,
-              isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
-            },
-    
-          });
-          // jQueryを使って、クリックイベントを追加
-          $("#filters").on("click", "button", function () {
-            //クリックしたボタンのdata-filterの値を変数に格納します
-            var filterValue = $(this).attr("data-filter");
-            //ここでオプションのfilterを発動させています。
-            //date-filterの値を使ってフィルタリングを行います。
-            $container.isotope({
-              filter: filterValue
-            });
-          });
-        });
-      </script> -->
   </body>
 </html>
