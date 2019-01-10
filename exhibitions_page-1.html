@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+
+<!-- head内の要素についてメモを残しましょう。 -->
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>持ちモノ写真展</title>
+    <title>あなたの持ちモノ写真展</title>
     <meta
       name="description"
-      content="授業内課題として、日用品を過度におしゃれに紹介するWebギャラリー。"
+      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
     />
-    <meta name="keywords" content="課題制作,Webギャラリー,日用品,写真" />
+    <meta name="keywords" content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
+    <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+    <meta property="og:site_name" content="あな持ち" />
+    <!-- <meta property="og:url" content="https://anamochi.yano/" /> -->
+    <meta property="og:image" content="./img/item/ランタン.jpg" />
+    <!-- <meta property="fb:app_id" content="1684914615163108" />
+    <meta name="twitter:card" content="summary_large_image" /> -->
+    <!-- <meta name="twitter:site" content="@CotenPics" /> -->
+    <meta name="twitter:title" content="あな持ち | あなたの持ち物写真展" />
+    <meta name="twitter:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+    <meta name="twitter:image" content="./img/item/ランタン.jpg" />
+    <meta content="no-preview" name="turbolinks-cache-control" />
+    
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="ffARiT7n+qxzJrDgV3vVtznGet1fJdqfnYymG8oBJvNkY2vfTwK/X/nsHkC0k4869jvAPQ7q8BvyVi4I4nZXGA==" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- icon -->
     <link
@@ -201,50 +235,14 @@
                 </div>
               </div>
 
-              <!-- SNS共有メニュー -->
-              <div
-                id="shareDropdownBtn"
-                class="mod_dropnavi ex_clearfix cmn__share-dropdown-btn"
-              >
-                <div class="parent">
-                  <a href="javascript:void(0)"
-                    ><img src="./img/icon/sns_menu.png"
-                  /></a>
-                  <div class="mod_dropnavi_child">
-                    <ul
-                      class="exhibition-show__info-foot-menu cmn__share-dropdown-menu cmn__dropdown-wrap"
-                      id="shareDropdown"
-                    >
-                      <li class="exhibition-show__info-foot-menu-item share">
-                        <a
-                          target="_blank"
-                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in fb"
-                          title="Facebookで共有"
-                          >facebook</a
-                        >
-                      </li>
-                      <li class="exhibition-show__info-foot-menu-item share">
-                        <a
-                          target="_blank"
-                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in twt"
-                          title="twitterで共有"
-                          >twitter</a
-                        >
-                      </li>
-                      <li class="exhibition-show__info-foot-menu-item share">
-                        <a
-                          class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in ggl"
-                          title="instagramで共有"
-                          >instagram</a
-                        >
-                      </li>
-                    </ul>
-                    <!-- /mod_dropnavi_child -->
-                  </div>
-                </div>
-              </div>
 
-              <!-- <div class="exhibition-show__info-foot-menu-btn">
+
+
+              <!-- SNS共有メニュー -->
+              <div class="exhibition-show__info-foot-menu-btn">
+
+
+
                 <div
                   class="exhibition-show__info-foot-dropdown-btn cmn__share-dropdown-btn cmn__dropdown-btn"
                   id="shareDropdownBtn"
@@ -252,10 +250,13 @@
                   <div class="txt">Menu</div>
                   <div class="svg icon-svg_menu">
                     <a href="javascript:void(0)">
-                      <img class="hukidashi" src="./img/icon/sns_menu.png" />
-                    </a>
+                      <img src="./img/icon/sns_menu.png"
+                    /></a>
                   </div>
                 </div>
+
+
+                
                 <ul
                   class="exhibition-show__info-foot-menu cmn__share-dropdown-menu cmn__dropdown-wrap"
                   id="shareDropdown"
@@ -265,6 +266,8 @@
                       target="_blank"
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in fb"
                       title="Facebookで共有"
+                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
+                      href="http://www.facebook.com/dialog/feed?app_id=1684914615163108&amp;link=https://coten.pics/exhibitions/6759&amp;picture=https://s3-ap-northeast-1.amazonaws.com/coten.images/picture/6759/s_pic2fd24a67-a997-42b0-afba-7594f0facc03.jpg&amp;name=Life%20is%20Beautiful%20027 by %E6%9D%BE%E4%B8%8B%20%E3%83%9E%E3%82%B5%E3%82%AD - 個展&amp;caption=coten&amp;description=松下 マサキの個展。開催期間は2018年12月17日(月) 21時28分まで。&amp;display=page"
                       >facebook</a
                     >
                   </li>
@@ -273,6 +276,8 @@
                       target="_blank"
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in twt"
                       title="twitterで共有"
+                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
+                      href="https://twitter.com/intent/tweet?text=Life%20is%20Beautiful%20027 by %E6%9D%BE%E4%B8%8B%20%E3%83%9E%E3%82%B5%E3%82%AD - 個展%0a&amp;url=https://coten.pics/exhibitions/6759&amp;hashtags=coten"
                       >twitter</a
                     >
                   </li>
@@ -280,6 +285,8 @@
                     <a
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in ggl"
                       title="instagramで共有"
+                      onclick="window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=640,height=480&#39;+&#39;,left=&#39;+(screen.width-640)/2+&#39;,top=&#39;+(screen.height-480)/2);return false;"
+                      href="https://plus.google.com/share?url=https://coten.pics/exhibitions/6759"
                       >instagram</a
                     >
                   </li>
@@ -287,8 +294,9 @@
                     class="exhibition-show__info-foot-menu-btn-wrap cmn__share-dropdown-menu-btn-wrap"
                   ></li>
                 </ul>
-              </div> -->
+              </div>
             </div>
+
             <!--
               <div class="comments__list-wrap" id="commentListWrap">
                 <div class="comments__list-in">
