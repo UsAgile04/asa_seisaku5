@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-
-<!-- head内の要素についてメモを残しましょう。 -->
+    <!-- head内の要素についてメモを残しましょう。 -->
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -11,12 +10,18 @@
       name="description"
       content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
     />
-    <meta name="keywords" content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ" />
+    <meta
+      name="keywords"
+      content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ"
+    />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
-    <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+    <meta
+      property="og:description"
+      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
+    />
     <meta property="og:site_name" content="あな持ち" />
     <!-- <meta property="og:url" content="https://anamochi.yano/" /> -->
     <meta property="og:image" content="./img/item/ランタン.jpg" />
@@ -24,26 +29,18 @@
     <meta name="twitter:card" content="summary_large_image" /> -->
     <!-- <meta name="twitter:site" content="@CotenPics" /> -->
     <meta name="twitter:title" content="あな持ち | あなたの持ち物写真展" />
-    <meta name="twitter:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+    <meta
+      name="twitter:description"
+      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を、無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
+    />
     <meta name="twitter:image" content="./img/item/ランタン.jpg" />
     <meta content="no-preview" name="turbolinks-cache-control" />
-    
+
     <meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token" content="ffARiT7n+qxzJrDgV3vVtznGet1fJdqfnYymG8oBJvNkY2vfTwK/X/nsHkC0k4869jvAPQ7q8BvyVi4I4nZXGA==" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <meta
+      name="csrf-token"
+      content="ffARiT7n+qxzJrDgV3vVtznGet1fJdqfnYymG8oBJvNkY2vfTwK/X/nsHkC0k4869jvAPQ7q8BvyVi4I4nZXGA=="
+    />
 
     <!-- icon -->
     <link
@@ -52,13 +49,14 @@
       href="./img/icon/シャッターアイコン4 (2).png"
     />
 
+
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/exhibitions_page.css" media="all" />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/common.css" media="all" />
+    <link rel="stylesheet" href="css/exhibitions_page.css" media="all" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -235,14 +233,8 @@
                 </div>
               </div>
 
-
-
-
               <!-- SNS共有メニュー -->
               <div class="exhibition-show__info-foot-menu-btn">
-
-
-
                 <div
                   class="exhibition-show__info-foot-dropdown-btn cmn__share-dropdown-btn cmn__dropdown-btn"
                   id="shareDropdownBtn"
@@ -255,8 +247,6 @@
                   </div>
                 </div>
 
-
-                
                 <ul
                   class="exhibition-show__info-foot-menu cmn__share-dropdown-menu cmn__dropdown-wrap"
                   id="shareDropdown"
@@ -528,43 +518,43 @@
     <script type="text/javascript">
       // スライドショー設定
       $(document).ready(function() {
-        $(".bxslider").bxSlider({
+        $('.bxslider').bxSlider({
           auto: false,
-          mode: "fade"
-        });
-      });
+          mode: 'fade'
+        })
+      })
     </script>
 
     <script type="text/javascript">
       //いいねボタンのカウント
       window.onload = function() {
-        document.getElementById("sampleButtonB").onclick = function() {
-          countUp();
-        };
-      };
-      var $count = 0;
+        document.getElementById('sampleButtonB').onclick = function() {
+          countUp()
+        }
+      }
+      var $count = 0
 
       function countUp() {
-        document.getElementById("sampleOutputB").innerHTML = ++$count;
+        document.getElementById('sampleOutputB').innerHTML = ++$count
       }
     </script>
 
     <script>
       //共通のページパーツ
       $(function() {
-        $("#common_nav").load("nav.html");
-        $("#common_footer").load("footer.html");
-      });
+        $('#common_nav').load('nav.html')
+        $('#common_footer').load('footer.html')
+      })
     </script>
 
     <script type="text/javascript" src="./js/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
-      $("[data-fancybox]").fancybox({
+      $('[data-fancybox]').fancybox({
         // オプションはここに書きます
 
         protect: true, //右クリック抑止
         keyboard: false //キーボード操作抑止
-      });
+      })
     </script>
 
     <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
@@ -573,39 +563,39 @@
     <script>
       $(function() {
         //読み込み完了後0.2秒待ってからisotopeする
-        var cnt = 0;
+        var cnt = 0
         var waiting = setInterval(function() {
           if (cnt == 1) {
-            var $container = $("#container");
+            var $container = $('#container')
 
-            $("#container").isotope({
+            $('#container').isotope({
               // 以下、isotopeのオプション
-              itemSelector: ".item",
+              itemSelector: '.item',
               // percentPosition: true,
-              layoutMode: "masonry",
+              layoutMode: 'masonry',
               masonry: {
                 columnWidth: 220
                 // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
               }
-            });
+            })
 
             // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
-            $("#filters").on("click", "button", function() {
+            $('#filters').on('click', 'button', function() {
               //クリックしたボタンのdata-filterの値を変数に格納
-              var filterValue = $(this).attr("data-filter");
+              var filterValue = $(this).attr('data-filter')
               //ここでオプションのfilterを発動
               //date-filterの値を使ってフィルタリング
               $container.isotope({
                 filter: filterValue
-              });
-            });
+              })
+            })
 
             // cntが1でないならば、0.2秒（200ms）waitする
-            clearInterval(waiting);
+            clearInterval(waiting)
           }
-          cnt++;
-        }, 200);
-      });
+          cnt++
+        }, 200)
+      })
     </script>
   </body>
 </html>
