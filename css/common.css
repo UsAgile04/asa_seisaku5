@@ -218,6 +218,11 @@ p.gotop a {
 =========================================
 */
 
+/* スマホ表示時に起こる余白の対策 */
+.over-wrap {
+	overflow: hidden;
+}
+
 /* ナビの設定 */
 #gnav {
   padding: 0;
@@ -398,16 +403,10 @@ top画よりも大きいZ値*/
   flex-grow: 1;
 }
 
-
-
-
-/* wrap, コンテンツ部全体 */
+/*コンテンツ部全体 */
 .contents {
   position: relative;
 }
-
-
-
 
 /* header,TOP画 */
 header {
@@ -434,7 +433,6 @@ header {
   text-align: center;
   font-size: 450%;
   font-family: 'Sawarabi Mincho', sans-serif;
-
 }
 
 .title h1 {
@@ -453,6 +451,44 @@ header {
   color: rgb(255, 255, 255);
   font-size: 250%;
 }
+
+@media (max-width: 620px) {
+  .top_visual img {
+    width: 100vw;
+    height: 70vh;
+  }
+  #toptext {
+    top: 23%;
+    left: 7%;
+    font-family: serif;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
+  
+  .title h1 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    position: absolute;
+    top: 32%;
+    left: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 230%;
+  }
+  
+  .title h2 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 95%;
+  }
+  
+
+
+
+  
+}
+
 
 /* main1, コンテンツ部1 */
 #main1 {
