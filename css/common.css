@@ -181,23 +181,31 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 #button-4:after {
   top: auto;
   bottom: 50%;
 }
-
 #button-4:hover {
   color: #ffffff;
 }
-
 #button-4:hover:before {
   height: 50%;
 }
-
 #button-4:hover:after {
   height: 50%;
 }
+
+@media (max-width: 620px) {
+#button-4{
+    width: 200px;
+    padding: 5% ;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: rgb(0, 0, 138);
+}
+}
+
+
 
 /* ページの上部に戻るボタン */
 p.gotop {
@@ -446,26 +454,59 @@ header {
 
 .title h2 {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 10%;
   color: rgb(255, 255, 255);
   font-size: 250%;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1024px) {
   .top_visual img {
     width: auto;
+    width: 100vw;
+  }
+  #toptext {
+    top: 30%;
+    left: 8%;
+    font-family: serif;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
+  .title h1 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 380%;
+  }
+  .title h2 {
+    position: absolute;
+    top: 53%;
+    left: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 155%;
+    text-align: left;
+    /* word-break: break-word;
+    padding-right: 130px; */
+  }
+
+}
+
+@media (max-width: 620px) {
+  .top_visual img {
+    width: 100vw;
     height: 67vh;
   }
   #toptext {
     top: 23%;
-    left: 7%;
+    left: 8%;
     font-family: serif;
     text-align: center;
     font-size: 200%;
     font-family: 'Sawarabi Mincho', sans-serif;
   }
-  
   .title h1 {
     font-family: 'Sawarabi Mincho', sans-serif;
     position: absolute;
@@ -478,9 +519,12 @@ header {
   .title h2 {
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 8%;
     color: rgb(255, 255, 255);
     font-size: 95%;
+    text-align: left;
+    word-break: break-word;
+    padding-right: 100px;
   }
   
 
@@ -507,6 +551,8 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 .main1-item {
   display: inline-block;
@@ -577,6 +623,16 @@ h2 {
   text-align: center;
   margin-top: 8%;
   font-size: 1.23em;
+}
+@media (max-width: 620px) {
+.menu-info{
+  font-size: 13px;
+}
+.What-this{
+  font-size: 10px;
+white-space: nowrap;  
+text-align: center;
+}
 }
 
 /* main2, コンテンツ部2 */
