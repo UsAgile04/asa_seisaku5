@@ -195,6 +195,7 @@ a {
   height: 50%;
 }
 
+/* レスポ・アニメーション抜き */
 @media (max-width: 620px) {
 #button-4{
     width: 200px;
@@ -551,9 +552,6 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
-
-
-
 .main1-item {
   display: inline-block;
   position: relative;
@@ -624,12 +622,36 @@ h2 {
   margin-top: 8%;
   font-size: 1.23em;
 }
+
+/* レスポ（シングルカラム・テキスト）*/
 @media (max-width: 620px) {
-.menu-info{
+.menu-divst1 {
+  display: inline-block;
+  margin: 0;
+
+}
+
+.main1-item {
+  width: 60vw;
+  margin: 5% 0;
+    padding: 0 20vw;
+    align-items: center;
+
+}
+
+.main1-item a:hover {
+  -webkit-animation: flash 0.7s;
+  animation: flash 0.7s;
+}
+
+.main1-item a img {
+  filter: none;
+}
+  .menu-info{
   font-size: 13px;
 }
 .What-this{
-  font-size: 10px;
+  font-size: 13px;
 white-space: nowrap;  
 text-align: center;
 }
@@ -675,9 +697,26 @@ figcaption {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 figure:hover figcaption {
   bottom: -1.5px;
+}
+
+@media (max-width: 1225px) {
+  figure {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+  }
+
+}
+
+@media (max-width: 670px) {
+figure {
+  position: relative;
+  overflow: hidden;
+  width: 70vw;
+}
+
 }
 
 

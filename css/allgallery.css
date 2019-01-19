@@ -384,6 +384,30 @@ header {
 .icon-svg_txt_search:before {
   content: url(../img/icon/検索フォーム.png);
 }
+@media (max-width: 1000px) {
+  .head-lower__book-btns {
+    box-sizing: border-box;
+    padding: 7px 15px;
+  }
+
+  .head-lower__book-btn.private {
+    margin-left: auto;
+  }
+
+  .head-lower__book-btn.private .head-lower__book-btn-in,
+  .head-lower__book-btn.public .head-lower__book-btn-in {
+    width: 130px;
+  }
+
+  .head-lower__book-btn-in {
+    padding: 7px 0;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}
+
+
+
 
 
 
@@ -397,7 +421,8 @@ padding: 2% 1%;
 
 .item {
   min-height: 250px;
-  margin: 3% 0 0 5.5%;
+  padding: 3% 0 0 5.5%;
+  text-align: center;
 }
 
 .gallery-info {
@@ -413,24 +438,46 @@ padding: 2% 1%;
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 1225px) {
+  #container {
+    text-align: center;
+    padding: 2.5% 7%;
+  }
 
-@media (max-width: 1000px) {
-  .head-lower__book-btns {
-    box-sizing: border-box;
-    padding: 7px 15px;
+  .item {
+    margin: 3% 0;
+padding: 3% 0 0 0.5%;
+text-align: center;
   }
-  .head-lower__book-btn.private {
-    margin-left: auto;
-  }
-  .head-lower__book-btn.private .head-lower__book-btn-in,
-  .head-lower__book-btn.public .head-lower__book-btn-in {
-    width: 130px;
-  }
-  .head-lower__book-btn-in {
-    padding: 7px 0;
-    font-size: 12px;
-    line-height: 1.1;
-  }
+
+}
+
+@media (max-width: 1225px) {
+#container {
+  text-align: center;
+  padding: 2.5% 0 2.5% 13%;
+}
+@media (max-width: 670px) {
+#container {
+  text-align: center;
+  padding: 2.5% 10%;
+}
+.item {
+  margin: 3% 0;
+  padding: 3% 10vw;
+  text-align: center;
+}
+.gallery-info {
+  font-size: 1rem;
+}
+
+.artist-name {
+  font-size: 0.7rem;
+  letter-spacing: 0.065em;
+  font-weight: bold;
+  text-align: center;
+}
+  
 }
 
 
