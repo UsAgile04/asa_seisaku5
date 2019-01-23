@@ -16,12 +16,11 @@
       content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
     />
     <meta
-    name="keywords"
-    content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ"
-  />
+      name="keywords"
+      content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ"
+    />
 
-
-<!-- sns関連のmetaタグ -->
+    <!-- sns関連のmetaタグ -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
     <meta
@@ -32,7 +31,7 @@
     <meta property="og:url" content="https://anamochi.yano/" />
     <meta property="og:image" content="./img/item/ランタン.jpg" />
 
-<!-- フェイスブック -->
+    <!-- フェイスブック -->
     <meta property="fb:app_id" content="(facebookID番号)" />
 
     <!-- twitter -->
@@ -45,8 +44,7 @@
     />
     <meta name="twitter:image" content="./img/item/ランタン.jpg" />
 
-
-<!-- ?? -->
+    <!-- ?? -->
     <meta content="no-preview" name="turbolinks-cache-control" />
     <meta name="csrf-param" content="authenticity_token" />
     <meta
@@ -60,8 +58,6 @@
       sizes="192x192"
       href="./img/icon/シャッターアイコン4 (2).png"
     />
-
-    
 
     <!-- stylesheets -->
     <link
@@ -278,7 +274,8 @@
                       target="_blank"
                       class="exhibition-show__info-foot-menu-item-in cmn__share-dropdown-menu-item-in twt"
                       title="twitterで共有"
-                      href="https://twitter.com/intent/tweet?url=./exhibitions_page-1.html&text=タイトルとか" target="blank_"
+                      href="https://twitter.com/intent/tweet?url=./exhibitions_page-1.html&text=タイトルとか"
+                      target="blank_"
                       >twitter</a
                     >
                   </li>
@@ -519,9 +516,11 @@
     </div>
     <div id="common_footer"></div>
 
+
+
+    
     <!-- javascript -->
     <script src="./js/jQuery.js"></script>
-    <script src="./js/dropdown_menu.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
     <script src="./js/fadein.js"></script>
 
@@ -535,28 +534,7 @@
       })
     </script>
 
-    <script type="text/javascript">
-      //いいねボタンのカウント
-      window.onload = function() {
-        document.getElementById('sampleButtonB').onclick = function() {
-          countUp()
-        }
-      }
-      var $count = 0
-
-      function countUp() {
-        document.getElementById('sampleOutputB').innerHTML = ++$count
-      }
-    </script>
-
-    <script>
-      //共通のページパーツ
-      $(function() {
-        $('#common_nav').load('nav.html')
-        $('#common_footer').load('footer.html')
-      })
-    </script>
-
+    <!-- 全画面表示（fancybox設定） -->
     <script type="text/javascript" src="./js/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
       $('[data-fancybox]').fancybox({

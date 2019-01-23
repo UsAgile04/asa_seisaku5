@@ -1,69 +1,161 @@
-// ページを開いたときや該当箇所にスクロールしたときに画像のフェードイン
-$(function () {
-  $(window).scroll(function() {
-    $(".fadein").each(function() {
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight + 200) {
-        $(this).addClass("scrollin");
-      }
-    });
-  });
-});
+// 共通のページパーツ
+$(function() {
+  $('#common_nav').load('nav.html')
+  $('#common_footer').load('footer.html')
+})
 
+// ページを開いたときや該当箇所にスクロールしたときに画像のフェードイン
+$(function() {
+  $(window).scroll(function() {
+    $('.fadein').each(function() {
+      var elemPos = $(this).offset().top
+      var scroll = $(window).scrollTop()
+      var windowHeight = $(window).height()
+      if (scroll > elemPos - windowHeight + 200) {
+        $(this).addClass('scrollin')
+      }
+    })
+  })
+})
 
 // ページの途中から現れ、スクロールに追随してくるボタン
-$(document).ready(function () {
+$(document).ready(function() {
+  $('.gotop').hide()
+  // ↑ページトップボタンを非表示にする
 
-    $(".gotop").hide();
-    // ↑ページトップボタンを非表示にする
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 400) {
+      // ↑ スクロール位置が100よりも小さい場合に以下の処理をする
+      $('.gotop').slideDown('fast')
+      // ↑ (100より小さい時は)ページトップボタンをスライドダウン
+    } else {
+      $('.gotop').slideUp('fast')
+      // ↑ それ以外の場合の場合はスライドアップする。
+    }
 
-    $(window).on("scroll", function () {
+    // フッター固定する
 
-        if ($(this).scrollTop() > 400) {
-            // ↑ スクロール位置が100よりも小さい場合に以下の処理をする
-            $('.gotop').slideDown("fast");
-            // ↑ (100より小さい時は)ページトップボタンをスライドダウン
-        } else {
-            $('.gotop').slideUp("fast");
-            // ↑ それ以外の場合の場合はスライドアップする。
-        }
+    // scrollHeight = $(document).height();
+    // // ドキュメントの高さ
+    // scrollPosition = $(window).height() + $(window).scrollTop();
+    // //　ウィンドウの高さ+スクロールした高さ→　現在のトップからの位置
+    // footHeight = $("footer").innerHeight();
+    // // フッターの高さ
 
-        // フッター固定する
+    // if (scrollHeight - scrollPosition <= footHeight) {
+    //     // 現在の下から位置が、フッターの高さの位置にはいったら
+    //     //  ".gotop"のpositionをabsoluteに変更し、フッターの高さの位置にする
+    //     $(".gotop").css({
+    //         "position": "absolute",
+    //         "bottom": footHeight
+    //     });
+    // } else {
+    //     // それ以外の場合は元のcssスタイルを指定
+    //     $(".gotop").css({
+    //         "position": "fixed",
+    //         "bottom": "0px"
+    //     });
+    // }
+  })
 
-        // scrollHeight = $(document).height();
-        // // ドキュメントの高さ
-        // scrollPosition = $(window).height() + $(window).scrollTop();
-        // //　ウィンドウの高さ+スクロールした高さ→　現在のトップからの位置
-        // footHeight = $("footer").innerHeight();
-        // // フッターの高さ
+  // トップへスムーススクロール
+  $('.gotop a').click(function() {
+    $('body,html').animate(
+      {
+        scrollTop: 0
+      },
+      500
+    )
+    // ページのトップへ 500 のスピードでスクロールする
+    return false
+  })
+})
 
-        // if (scrollHeight - scrollPosition <= footHeight) {
-        //     // 現在の下から位置が、フッターの高さの位置にはいったら
-        //     //  ".gotop"のpositionをabsoluteに変更し、フッターの高さの位置にする        
-        //     $(".gotop").css({
-        //         "position": "absolute",
-        //         "bottom": footHeight
-        //     });
-        // } else {
-        //     // それ以外の場合は元のcssスタイルを指定
-        //     $(".gotop").css({
-        //         "position": "fixed",
-        //         "bottom": "0px"
-        //     });
-        // }
-    });
 
-    // トップへスムーススクロール
-    $('.gotop a').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        // ページのトップへ 500 のスピードでスクロールする
-        return false;
-    });
+// カテゴリーボタンのアコーディオン設定
+$(function() {
+  // 親メニュー処理
+  $('.cmn__dropdown-btn').click(function() {
+    // メニュー表示/非表示
+    $(this)
+      .next('#catsDropdown')
+      .slideToggle('fast')
+  })
+})
 
-});
 
+
+
+
+
+// ページ遅延読み込み
+$(function() {
+  var h = $(window).height()
+
+  $('#wrap').css('display', 'none')
+  $('#loader-bg ,#loader')
+    .height(h)
+    .css('display', 'block')
+})
+
+$(window).load(function() {
+  //全ての読み込みが完了したら実行
+  $('#loader-bg')
+    .delay(900)
+    .fadeOut(800)
+  $('#loader')
+    .delay(600)
+    .fadeOut(300)
+  $('#wrap').css('display', 'block')
+})
+
+//10秒たったら強制的にロード画面を非表示
+$(function() {
+  setTimeout('stopload()', 10000)
+})
+
+function stopload() {
+  $('#wrap').css('display', 'block')
+  $('#loader-bg')
+    .delay(900)
+    .fadeOut(800)
+  $('#loader')
+    .delay(600)
+    .fadeOut(300)
+}
+
+$(function() {
+  //global nav
+  var btn = $('.exhibition-show__info-foot-menu-btn')
+  var submenu = $('.exhibition-show__info-foot-menu')
+  var submenulink = $('.exhibition-show__info-foot-menu li a')
+  //click
+  $(btn).bind('click', 'focus', function(event) {
+    var shownav = $(this).find('.exhibition-show__info-foot-menu')
+    if ($(shownav).css('display') == 'none') {
+      $(shownav).slideDown('fast')
+    } else {
+      $(shownav).slideUp('fast')
+    }
+  })
+  //hover
+  $(btn).hover(
+    function() {},
+    function() {
+      $(submenu).slideUp('fast')
+    }
+  )
+})
+
+//いいねボタンのカウント
+window.onload = function() {
+  document.getElementById('sampleButtonB').onclick = function() {
+    countUp()
+  }
+}
+var $count = 0
+
+function countUp() {
+  document.getElementById('sampleOutputB').innerHTML = ++$count
+}
 
