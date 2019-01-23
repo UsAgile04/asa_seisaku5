@@ -670,6 +670,7 @@ text-align: center;
 [data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
   display: none;
 }
+
 [data-filter-view][data-filter-view~="貝類"] [data-filter-key="貝類"],
 [data-filter-view][data-filter-view~="光物"] [data-filter-key="光物"],
 [data-filter-view][data-filter-view~="白身"] [data-filter-key="白身"],
