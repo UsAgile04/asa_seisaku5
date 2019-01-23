@@ -3,6 +3,7 @@
   <head>
     <!-- head内の要素についてメモを残しましょう。 -->
 
+<<<<<<< HEAD
     <meta charset="utf-8" />
     <!-- 文字コード -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -19,6 +20,31 @@
       name="keywords"
       content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ"
     />
+=======
+<head>
+  <!-- head内の要素についてメモを残しましょう。 -->
+
+    <!-- 文字コード -->
+  <meta charset="utf-8" />
+    <!-- IEに最新の挙動をさせる -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- レスポンシブ対応 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!-- ページタブに表示される、サイトのタイトル -->
+  <title>あな持ち | あなたの持ち物写真展</title>
+
+  <meta name="description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta name="keywords" content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ" />
+
+
+  <!-- sns関連のmetaタグ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
+  <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta property="og:site_name" content="あな持ち" />
+  <meta property="og:url" content="https://anamochi.yano/" />
+  <meta property="og:image" content="./img/item/ランタン.jpg" />
+>>>>>>> 060463a377f2770f4b4b8c7d003ef5c0a004befb
 
     <!-- sns関連のmetaタグ -->
     <meta property="og:type" content="website" />
@@ -87,6 +113,7 @@
         </div>
       </header>
 
+<<<<<<< HEAD
       <div class="contents">
         <p class="gotop">
           <a href="#">
@@ -104,6 +131,25 @@
                 </a>
                 <p class="menu-info">このサイトは？</p>
               </li>
+=======
+    <div class="contents">
+      <p class="gotop">
+        <a href="#">
+          <img src="./img/angel-up-thin-64.png" alt="ページトップへ戻る" />
+        </a>
+      </p>
+      <section id="main1" class="main1-cont">
+        <div id="half-top" class="wrap">
+          <h2 class="heading">ようこそ！</h2>
+          <ul class="menu-divst1">
+            <li class="main1-item">
+              <a href="./site_introduction.html">
+                <img src="img/item/カフェとPC.jpg" alt="" />
+                <!-- <h4 class="menu-text left-one">このサイトは？</h4> -->
+              </a>
+              <p class="menu-info What-this">このサイトは？</p>
+            </li>
+>>>>>>> 060463a377f2770f4b4b8c7d003ef5c0a004befb
 
               <li class="main1-item">
                 <a href="#">
@@ -113,6 +159,7 @@
                 <p class="menu-info">感想</p>
               </li>
 
+<<<<<<< HEAD
               <li class="main1-item">
                 <a href="#">
                   <img src="img/item/メイン_撮影風景.jpg" alt="" />
@@ -126,6 +173,20 @@
                 >そんなことより写真集を見る</a
               >
             </div>
+=======
+            <li class="main1-item">
+              <a href="#">
+                <img src="img/item/メイン_撮影風景.jpg" alt="" />
+                <!-- <h4 class="menu-text right-one">作業風景、撮影仲間</h4> -->
+              </a>
+              <p class="menu-info">自己紹介</p>
+            </li>
+          </ul>
+          <div class="six col">
+            <a href="./allgallery.html" class="button" id="button-4"
+              >そんなことより写真集を見る</a
+            >
+>>>>>>> 060463a377f2770f4b4b8c7d003ef5c0a004befb
           </div>
         </section>
 
@@ -288,6 +349,7 @@
       <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
       <script src="./js/isotope.pkgd.min.js"></script>
 
+<<<<<<< HEAD
       <script>
         $(function() {
           //読み込み完了後0.2秒待ってからisotopeする
@@ -295,6 +357,18 @@
           var waiting = setInterval(function() {
             if (cnt == 1) {
               var $container = $('#container')
+=======
+            $("#container").isotope({
+              // 以下、isotopeのオプション
+              itemSelector: ".item",
+              // percentPosition: true,
+              layoutMode: "masonry",
+              masonry: {
+                columnWidth: 100
+                // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+              }
+            });
+>>>>>>> 060463a377f2770f4b4b8c7d003ef5c0a004befb
 
               $('#container').isotope({
                 // 以下、isotopeのオプション

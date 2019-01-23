@@ -181,23 +181,32 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 #button-4:after {
   top: auto;
   bottom: 50%;
 }
-
 #button-4:hover {
   color: #ffffff;
 }
-
 #button-4:hover:before {
   height: 50%;
 }
-
 #button-4:hover:after {
   height: 50%;
 }
+
+/* レスポ・アニメーション抜き */
+@media (max-width: 620px) {
+#button-4{
+    width: 200px;
+    padding: 5% ;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: rgb(0, 0, 138);
+}
+}
+
+
 
 /* ページの上部に戻るボタン */
 p.gotop {
@@ -446,26 +455,59 @@ header {
 
 .title h2 {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 10%;
   color: rgb(255, 255, 255);
   font-size: 250%;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1024px) {
   .top_visual img {
     width: auto;
+    width: 100vw;
+  }
+  #toptext {
+    top: 30%;
+    left: 8%;
+    font-family: serif;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
+  .title h1 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 380%;
+  }
+  .title h2 {
+    position: absolute;
+    top: 53%;
+    left: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 155%;
+    text-align: left;
+    /* word-break: break-word;
+    padding-right: 130px; */
+  }
+
+}
+
+@media (max-width: 620px) {
+  .top_visual img {
+    width: 100vw;
     height: 67vh;
   }
   #toptext {
     top: 23%;
-    left: 7%;
+    left: 8%;
     font-family: serif;
     text-align: center;
     font-size: 200%;
     font-family: 'Sawarabi Mincho', sans-serif;
   }
-  
   .title h1 {
     font-family: 'Sawarabi Mincho', sans-serif;
     position: absolute;
@@ -478,9 +520,12 @@ header {
   .title h2 {
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 8%;
     color: rgb(255, 255, 255);
     font-size: 95%;
+    text-align: left;
+    word-break: break-word;
+    padding-right: 100px;
   }
   
 
@@ -507,7 +552,6 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
-
 .main1-item {
   display: inline-block;
   position: relative;
@@ -579,6 +623,40 @@ h2 {
   font-size: 1.23em;
 }
 
+/* レスポ（シングルカラム・テキスト）*/
+@media (max-width: 620px) {
+.menu-divst1 {
+  display: inline-block;
+  margin: 0;
+
+}
+
+.main1-item {
+  width: 60vw;
+  margin: 5% 0;
+    padding: 0 20vw;
+    align-items: center;
+
+}
+
+.main1-item a:hover {
+  -webkit-animation: flash 0.7s;
+  animation: flash 0.7s;
+}
+
+.main1-item a img {
+  filter: none;
+}
+  .menu-info{
+  font-size: 13px;
+}
+.What-this{
+  font-size: 13px;
+white-space: nowrap;  
+text-align: center;
+}
+}
+
 /* main2, コンテンツ部2 */
 /* .menu-divst2 {
   display: flex;
@@ -619,9 +697,26 @@ figcaption {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 figure:hover figcaption {
   bottom: -1.5px;
+}
+
+@media (max-width: 1225px) {
+  figure {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+  }
+
+}
+
+@media (max-width: 670px) {
+figure {
+  position: relative;
+  overflow: hidden;
+  width: 70vw;
+}
+
 }
 
 
