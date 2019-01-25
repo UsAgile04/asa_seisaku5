@@ -485,7 +485,7 @@ text-align: center;
 
 
 
-#loader-bg {
+/* #loader-bg {
   display: none;
   position: fixed;
   width: 100%;
@@ -507,7 +507,7 @@ text-align: center;
   text-align: center;
   color: #fff;
   z-index: 101;
-}
+} */
 
 
 
@@ -671,9 +671,3 @@ text-align: center;
   display: none;
 }
 
-[data-filter-view][data-filter-view~="貝類"] [data-filter-key="貝類"],
-[data-filter-view][data-filter-view~="光物"] [data-filter-key="光物"],
-[data-filter-view][data-filter-view~="白身"] [data-filter-key="白身"],
-[data-filter-view][data-filter-view~="赤身"] [data-filter-key="赤身"] {
-  display: block;
-}
