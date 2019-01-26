@@ -433,7 +433,64 @@ header {
   object-fit: cover;
 }
 
-#toptext {
+.title{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+.title_call{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.title_call:nth-child(1) {
+  font-size: 500%;
+}
+.title_call:nth-child(2){
+  font-size:600%; 
+  margin: 0 0 3% 0;
+}
+.title_call:nth-child(3) {
+  font-size: 250%;
+}
+
+@media (max-width: 1020px) {
+  .top_visual img {
+    width: auto;
+    width: 100vw;
+  }
+
+  .title_call:nth-child(3) {
+  font-size: 250%;
+  padding: 0 16% 0 0;
+}
+
+}
+
+@media (max-width: 740px) {
+  .top_visual img {
+    width: 100vw;
+    height: 67vh;
+  }
+
+.title_call:nth-child(1) {
+  font-size: 200%;
+}
+
+.title_call:nth-child(2) {
+  font-size: 250%;
+  margin: 0 0 3% 0;
+}
+
+.title_call:nth-child(3) {
+  font-size: 145%;
+}
+
+}
+
+/* #toptext {
   color: rgb(255, 255, 255);
   position: absolute;
   top: 25%;
@@ -447,7 +504,7 @@ header {
 .title h1 {
   font-family: 'Sawarabi Mincho', sans-serif;
   position: absolute;
-  top: 42%;
+  top: 31%;
   left: 10%;
   color: rgb(255, 255, 255);
   font-size: 700%;
@@ -489,8 +546,6 @@ header {
     color: rgb(255, 255, 255);
     font-size: 155%;
     text-align: left;
-    /* word-break: break-word;
-    padding-right: 130px; */
   }
 
 }
@@ -528,7 +583,7 @@ header {
     padding-right: 100px;
   }
   
-}
+} */
 
 
 /* main1, コンテンツ部1 */
