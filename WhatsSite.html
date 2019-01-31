@@ -1,184 +1,187 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- head内の要素についてメモを残しましょう。 -->
 
-    <!-- 文字コード -->
-    <meta charset="utf-8" />
-    <!-- IEに最新の挙動をさせる -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <!-- レスポンシブ対応 -->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- ページタブに表示される、サイトのタイトル -->
-    <title>あな持ち | あなたの持ち物写真展</title>
+<head>
+  <!-- head内の要素についてメモを残しましょう。 -->
 
-    <meta
-      name="description"
-      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
-    />
-    <meta
-      name="keywords"
-      content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ"
-    />
+  <!-- 文字コード -->
+  <meta charset="utf-8" />
+  <!-- IEに最新の挙動をさせる -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!-- レスポンシブ対応 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!-- ページタブに表示される、サイトのタイトル -->
+  <title>あな持ち | あなたの持ち物写真展</title>
 
-    <!-- sns関連のmetaタグ -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
-    <meta
-      property="og:description"
-      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
-    />
-    <meta property="og:site_name" content="あな持ち" />
-    <meta property="og:url" content="https://anamochi.yano/" />
-    <meta property="og:image" content="./img/item/ランタン.jpg" />
+  <meta name="description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta name="keywords" content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ" />
 
-    <!-- sns関連のmetaタグ -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
-    <meta
-      property="og:description"
-      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
-    />
-    <meta property="og:site_name" content="あな持ち" />
-    <meta property="og:url" content="https://anamochi.yano/" />
-    <meta property="og:image" content="./img/item/ランタン.jpg" />
+  <!-- sns関連のmetaタグ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
+  <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta property="og:site_name" content="あな持ち" />
+  <meta property="og:url" content="https://anamochi.yano/" />
+  <meta property="og:image" content="./img/item/ランタン.jpg" />
 
-    <!-- フェイスブック -->
-    <meta property="fb:app_id" content="(facebookID番号)" />
+  <!-- sns関連のmetaタグ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
+  <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta property="og:site_name" content="あな持ち" />
+  <meta property="og:url" content="https://anamochi.yano/" />
+  <meta property="og:image" content="./img/item/ランタン.jpg" />
 
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@anamochi" />
-    <meta name="twitter:title" content="あな持ち | あなたの持ち物写真展" />
-    <meta
-      name="twitter:description"
-      content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。"
-    />
-    <meta name="twitter:image" content="./img/item/ランタン.jpg" />
+  <!-- フェイスブック -->
+  <meta property="fb:app_id" content="(facebookID番号)" />
 
-    <!-- ?? -->
-    <meta content="no-preview" name="turbolinks-cache-control" />
-    <meta name="csrf-param" content="authenticity_token" />
-    <meta
-      name="csrf-token"
-      content="ffARiT7n+qxzJrDgV3vVtznGet1fJdqfnYymG8oBJvNkY2vfTwK/X/nsHkC0k4869jvAPQ7q8BvyVi4I4nZXGA=="
-    />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@anamochi" />
+  <meta name="twitter:title" content="あな持ち | あなたの持ち物写真展" />
+  <meta name="twitter:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta name="twitter:image" content="./img/item/ランタン.jpg" />
 
-    <!-- icon -->
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="./img/icon/シャッターアイコン4 (2).png"
-    />
+  <!-- icon -->
+  <link rel="icon" sizes="192x192" href="./img/icon/シャッターアイコン4 (2).png" />
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="css/jquery.bxslider.css" media="all" />
-    <link rel="stylesheet" href="css/common.css" media="all" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/common.css" media="all" />
+  <link rel="stylesheet" href="css/WhatsSite.css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese" rel="stylesheet" />
+</head>
 
-  <body>
+<body>
 
 
-    <div class="over-wrap">
-      <div id="common_nav"></div>
+  <div class="over-wrap">
+    <div id="common_nav"></div>
 
+    <div class="site_concept">
+      <p class="conseptimg">
+        <img src="./img/item/cofeemill.jpg" alt="愛用品" />
+      </p>
       <h1>主役は、あなたの愛用品。</h1>
-      <img src="" alt="" />
       <h2>―　思い入れのあるモノでWeb個展を　―</h2>
       <p>
-        なんとなくいつも使っているペン、お気に入りのコート、見飽きた仕事道具・・・
-        私たちの身の回りには、たくさんの物に溢れています。
-        あなたの持ち物の中には、「こんないいものを持っている」「誰かに見せてみたい」
-
-
-
-        あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。
-        写真展を開いてみたいけど何をどうしていいのやら、という方は多いのではないでしょうか。もしあなたがそうであるならば、まずはWeb個展から始めてみられてはいかがでしょうか。
-        会場の手配や写真の印刷・額装などのための手間や費用は一切不要で、今すぐあなたの写真展を世界に向けて公開することができます。
-        すでにギャラリーなどで個展を開いていらっしゃる方も、Web個展なら世界中から観ることができるので、遠隔地のご友人にもあなたの作品を届けていただくことができます。
-        また、展示情報と合わせて投稿していただくと、より一層効果的な宣伝にもつながります。
+        なんとなくいつも使っているペン、お気に入りのコート、見飽きた仕事道具・・・<br>
+        私たちの身の回りには、たくさんの物に溢れています。<br>
+        あなたの持ち物の中には、<br>「思い出の品」や「なんか愛着のあるもの」、<br>そんなちょっとした思い入れのある持ち物はありますか。<br><br>
+        『あな持ち』は、<br>あなたのお気に入り道具をおしゃれに紹介できる写真展を<br>無料で気軽に楽しむことができる、<br>写真好きのためのサービス（予定）です。<br>
+        現在も製作中ですが、<br>誰でも簡単に、<br>そして自由にWeb個展を開催できる場所になることを目指します。
       </p>
-
-      <h2>このサイトでできること</h2>
-      <ul>
-        <li>
-          写真投稿機能＋スライドショー表示
-          <p>
-            テキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
-        </li>
-        <li>
-          コメント機能
-          <p>
-            テキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
-        </li>
-        <li>
-          個展検索
-          <p>
-            テキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
-        </li>
-        <li>
-          ＳＮＳ連携
-          <p>
-            テキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
-        </li>
-      </ul>
-
-      <div></div>
     </div>
 
-    <div id="common_footer"></div>
+    <h2>―　当サイトの今後の作業予定　―</h2>
+    <div class="site_task">
 
-    <!-- javascript -->
-    <script src="./js/jQuery.js"></script>
-    <script src="./js/fadein.js"></script>
+      <div class="system_task task_link">
+        <ul><b>機能面</b>
+          <li>
+            認証機能（個展主ページ）
+            <p>
+              PHPの学習を兼ね、現在作成・テスト中（２月中旬までに実装予定）
+            </p>
+          </li>
+          <li>
+            個展検索
+            <p>
+              ２月中旬実装予定です（鋭意工事中）。
+            </p>
+          </li>
 
-    <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
-    <script src="./js/isotope.pkgd.min.js"></script>
+          <li>
+            写真投稿機能
+            <p>
+              ２月下旬実装予定。
+            </p>
+          </li>
+          <li>
+            いいね・コメント機能
+            <p>
+              ３月上旬実装予定。
+            </p>
+          </li>
+          <li>
+            ＳＮＳ連携
+            <p>
+              今後、ユーザーごとの個展ページの生成機能が出来次第、実装を予定。
+            </p>
+          </li>
+        </ul>
+      </div>
 
-    <script>
-      $(function() {
-        //読み込み完了後0.2秒待ってからisotopeする
-        var cnt = 0
-        var waiting = setInterval(function() {
-          if (cnt == 1) {
-            var $container = $('#container')
+      <div class="cont_task task_link">
+        <ul><b>コンテンツ面</b>
+          <li>
+            フッタ―コンテンツ（お知らせ、お問い合わせ等）内のページ作成
+            <p>
+              機能麺の拡充に伴い随時製作予定。
+            </p>
+          </li>
+          <li>
+            右上のハンバーガーメニュー内のコンテンツ設定
+            <p>
+              設定項目を現在検討中。
+            </p>
+          </li>
+          <li>
+            個展一覧のサンプルサムネイル（フリー写真素材）の撤廃
+            <p>
+              動作確認用のため、制作最終段階にて撤去予定。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            $('#container').isotope({
-              // 以下、isotopeのオプション
-              itemSelector: '.item',
-              // percentPosition: true,
-              layoutMode: 'masonry',
-              masonry: {
-                columnWidth: 220
-                // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
-              }
+  <div id="common_footer"></div>
+
+  <!-- javascript -->
+  <script src="./js/jQuery.js"></script>
+  <script src="./js/fadein.js"></script>
+
+  <!-- ここからタイルレイアウト＆フィルター機能の設定。なかなか頑張ったと思う。 -->
+  <script src="./js/isotope.pkgd.min.js"></script>
+
+  <script>
+    $(function () {
+      //読み込み完了後0.2秒待ってからisotopeする
+      var cnt = 0
+      var waiting = setInterval(function () {
+        if (cnt == 1) {
+          var $container = $('#container')
+
+          $('#container').isotope({
+            // 以下、isotopeのオプション
+            itemSelector: '.item',
+            // percentPosition: true,
+            layoutMode: 'masonry',
+            masonry: {
+              columnWidth: 220
+              // isFitWidth: true //親要素の幅に合わせてカラム数を自動調整するかしないか
+            }
+          })
+
+          // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
+          $('#filters').on('click', 'button', function () {
+            //クリックしたボタンのdata-filterの値を変数に格納
+            var filterValue = $(this).attr('data-filter')
+            //ここでオプションのfilterを発動
+            //date-filterの値を使ってフィルタリング
+            $container.isotope({
+              filter: filterValue
             })
+          })
 
-            // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
-            $('#filters').on('click', 'button', function() {
-              //クリックしたボタンのdata-filterの値を変数に格納
-              var filterValue = $(this).attr('data-filter')
-              //ここでオプションのfilterを発動
-              //date-filterの値を使ってフィルタリング
-              $container.isotope({
-                filter: filterValue
-              })
-            })
+          // cntが1でないならば、0.2秒（200ms）waitする
+          clearInterval(waiting)
+        }
+        cnt++
+      }, 200)
+    })
+  </script>
+</body>
 
-            // cntが1でないならば、0.2秒（200ms）waitする
-            clearInterval(waiting)
-          }
-          cnt++
-        }, 200)
-      })
-    </script>
-  </body>
 </html>
