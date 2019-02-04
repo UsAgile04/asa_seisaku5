@@ -81,9 +81,7 @@
             <form
               class="head__discover-search-form"
               id="exhibition_search"
-              action=""
               accept-charset="UTF-8"
-              method="post"
             >
               <input name="utf8" type="hidden" value="&#x2713;" />
               <div class="head__discover-search-input-wrap filter_keyword">
@@ -94,10 +92,10 @@
                 <!-- <input type="text" name="filter_free" size="40" />&nbsp; -->
                 <input
                   class="head__discover-search-input allow_submit"
-                  placeholder="個展名、タグ、ユーザー名"
+                  placeholder="個展名、ユーザー名"
                   type="search"
                   name="q[title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont]"
-                  id="q_title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont"
+                  id="search-text"
                 />
                 <!-- <a
                   class="head__discover-search-cancel "
@@ -158,7 +156,20 @@
         </div>
       </div>
  -->
+<div class="search-result">
+  <div class="search-result__hit-num"></div>
+  <div id="search-result__list"></div>
+</div>
+
+
+
+
+
       <div id="container">
+
+
+
+
         <div class="item type1">
           <figure>
             <a href="./exhibitions_page-1.html">

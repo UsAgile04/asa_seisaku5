@@ -425,6 +425,11 @@ padding: 2% 1%;
   text-align: center;
 }
 
+#container .hidden {
+  display: none
+}
+
+
 .gallery-info {
   margin: 5% 0 2%;
   font-size: 1.2rem;
@@ -670,4 +675,3 @@ text-align: center;
 [data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
   display: none;
 }
-
