@@ -65,7 +65,7 @@ header {
   }
   .head-lower__links {
     position: fixed;
-    top: 45px;
+    top: 90px;
     left: 0;
     z-index: 69;
     width: 100%;
