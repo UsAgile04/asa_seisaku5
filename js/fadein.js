@@ -33,29 +33,6 @@ $(document).ready(function() {
       // ↑ それ以外の場合の場合はスライドアップする。
     }
 
-    // フッター固定する
-
-    // scrollHeight = $(document).height();
-    // // ドキュメントの高さ
-    // scrollPosition = $(window).height() + $(window).scrollTop();
-    // //　ウィンドウの高さ+スクロールした高さ→　現在のトップからの位置
-    // footHeight = $("footer").innerHeight();
-    // // フッターの高さ
-
-    // if (scrollHeight - scrollPosition <= footHeight) {
-    //     // 現在の下から位置が、フッターの高さの位置にはいったら
-    //     //  ".gotop"のpositionをabsoluteに変更し、フッターの高さの位置にする
-    //     $(".gotop").css({
-    //         "position": "absolute",
-    //         "bottom": footHeight
-    //     });
-    // } else {
-    //     // それ以外の場合は元のcssスタイルを指定
-    //     $(".gotop").css({
-    //         "position": "fixed",
-    //         "bottom": "0px"
-    //     });
-    // }
   })
 
   // トップへスムーススクロール
@@ -85,10 +62,7 @@ $(function() {
 
 
 
-
-
-
-
+// 個展ページ内SNSボタン表示（吹きだしメニュー）
 $(function() {
   //global nav
   var btn = $('.exhibition-show__info-foot-menu-btn')
@@ -165,26 +139,3 @@ searchWord = function () {
 // searchWordの実行
 $('#search-text').on('input', searchWord);
 
-
-
-
-// $(function () {
-//   searchWord = function () {
-//     var searchText = $(this).val(), // 検索ボックスに入力された値
-//       targetText;
-
-//     $('#container div').each(function () {
-//       targetText = $(this).text();
-
-//       // 検索対象となるリストに入力された文字列が存在するかどうかを判断
-//       if (targetText.indexOf(searchText) != -1) {
-//         $(this).removeClass('hidden');
-//       } else {
-//         $(this).addClass('hidden');
-//       }
-//     });
-//   };
-
-//   // searchWordの実行
-//   $('#search-text').on('input', searchWord);
-// });
