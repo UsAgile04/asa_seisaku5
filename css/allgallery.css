@@ -65,7 +65,7 @@ header {
   }
   .head-lower__links {
     position: fixed;
-    top: 90px;
+    top: 45px;
     left: 0;
     z-index: 69;
     width: 100%;
@@ -424,11 +424,6 @@ padding: 2% 1%;
   padding: 3% 0 0 5.5%;
   text-align: center;
 }
-
-#container .hidden {
-  display: none
-}
-
 
 .gallery-info {
   margin: 5% 0 2%;

@@ -13,17 +13,19 @@
   <!-- ページタブに表示される、サイトのタイトル -->
   <title>あな持ち | あなたの持ち物写真展</title>
 
-  <meta name="description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta name="description"
+    content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
   <meta name="keywords" content="あな持ち, 持ち物, 道具, 個展, 写真展, 写真, カメラ, 投稿, sns, 写真 アプリ" />
 
 
   <!-- sns関連のmetaタグ -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="あな持ち | あなたの持ち物写真展" />
-  <meta property="og:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
+  <meta property="og:description"
+    content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
   <meta property="og:site_name" content="あな持ち" />
   <meta property="og:url" content="https://anamochi.yano/" />
-  <meta property="og:image" content="./img/item/ランタン.jpg" />
+  <meta property="og:image" content="./img/item/first_visual01.jpg" />
 
   <!-- フェイスブック -->
   <meta property="fb:app_id" content="(facebookID番号)" />
@@ -33,27 +35,20 @@
   <meta name="twitter:site" content="@anamochi" />
   <meta name="twitter:title" content="あな持ち | あなたの持ち物写真展" />
   <meta name="twitter:description" content="あな持ちは、あなたのお持ちのお気に入り道具をおしゃれに紹介できる写真展を無料で気軽に楽しむことができる、写真好きのためのSNSです。現在も製作中ですが、誰でも簡単に、そして自由にWeb個展を開催できるサービスを目指します。" />
-  <meta name="twitter:image" content="./img/item/ランタン.jpg" />
+  <meta name="twitter:image" content="./img/item/first_visual01.jpg" />
 
-    <!-- icon -->
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="./img/icon/シャッターアイコン4.png"
-    />
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="css/common.css" media="all" />
-    <link rel="stylesheet" href="css/allgallery.css" media="all" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese"
-      rel="stylesheet"
-    />
-    <script src="./js/jQuery.js"></script>
-    
-  </head>
+  <!-- icon -->
+  <link rel="icon" sizes="192x192" href="./img/icon/site_icon.png" />
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/common.css" media="all" />
+  <link rel="stylesheet" href="css/allgallery.css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sawarabi+Mincho&amp;subset=japanese" rel="stylesheet" />
+  <script src="./js/jQuery.js"></script>
 
-  <body>
-<div class="over-wrap">
+</head>
+
+<body>
+  <div class="over-wrap">
 
     <div id="common_nav"></div>
 
@@ -64,39 +59,24 @@
             <a class="head-lower__link" href="#top">おすすめ</a>
           </li>
           <li class="head-lower__link-wrap popular">
-            <a class="head-lower__link active" href="/exhibitions/popular"
-              >人気</a
-            >
+            <a class="head-lower__link active" href="/exhibitions/popular">人気</a>
           </li>
           <li class="fresh head-lower__link-wrap">
-            <a class="head-lower__link active" href="/exhibitions/fresh"
-              >新着</a
-            >
+            <a class="head-lower__link active" href="/exhibitions/fresh">新着</a>
           </li>
         </ul>
 
         <div class="head__discover-others-wrap view-pc-tab">
           <!--  キーワード検索 1/30現在、実装作業中  -->
           <div class="head__discover-search">
-            <form
-              class="head__discover-search-form"
-              id="exhibition_search"
-              accept-charset="UTF-8"
-            >
+            <form class="head__discover-search-form" id="exhibition_search" accept-charset="UTF-8">
               <input name="utf8" type="hidden" value="&#x2713;" />
               <div class="head__discover-search-input-wrap filter_keyword">
-                <div
-                  class="svg-search icon-svg_txt_search"
-                  onclick="submitTextSearchForm()"
-                ></div>
+                <div class="svg-search icon-svg_txt_search" onclick="submitTextSearchForm()"></div>
                 <!-- <input type="text" name="filter_free" size="40" />&nbsp; -->
-                <input
-                  class="head__discover-search-input allow_submit"
-                  placeholder="個展名、ユーザー名"
-                  type="search"
+                <input class="head__discover-search-input allow_submit" placeholder="個展名、ユーザー名" type="search"
                   name="q[title_or_tags_tag_name_or_user_first_name_or_user_last_name_or_user_id_name_cont]"
-                  id="search-text"
-                />
+                  id="search-text" />
                 <!-- <a
                   class="head__discover-search-cancel "
                   href="/exhibitions/editors?q="
@@ -104,13 +84,8 @@
                   <div class="svg-cancel icon-svg_close"></div>
                 </a> -->
               </div>
-              <input
-                type="submit"
-                name="commit"
-                value="search"
-                class="head__discover-search-submit"
-                data-disable-with="search"
-              />
+              <input type="submit" name="commit" value="search" class="head__discover-search-submit"
+                data-disable-with="search" />
             </form>
           </div>
 
@@ -120,10 +95,7 @@
               カテゴリー
             </div>
 
-            <div
-              class="head__discover-cat-select-dropdown cmn__dropdown-wrap"
-              id="catsDropdown"
-            >
+            <div class="head__discover-cat-select-dropdown cmn__dropdown-wrap" id="catsDropdown">
               <div id="filters" class="button-group">
                 <button data-filter="*">すべてのカテゴリー</button>
                 <button data-filter=".type2">カテゴリ2</button>
@@ -156,25 +128,18 @@
         </div>
       </div>
  -->
-<div class="search-result">
-  <div class="search-result__hit-num"></div>
-  <div id="search-result__list"></div>
-</div>
-
-
-
-
-
+      <div class="search-result">
+        <div class="search-result__hit-num"></div>
+        <div id="search-result__list"></div>
+      </div>
       <div id="container">
-
-
-
-
         <div class="item type1">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/キャンプ食器.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail01.jpeg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">ここに個展タイトルなど</p>
@@ -187,7 +152,9 @@
           <figure>
             <a href="./exhibitions_page-1.html">
               <img src="img/item/lubitel_1.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">My camera</p>
@@ -196,8 +163,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/amp.jpeg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail02.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -207,8 +176,10 @@
         <div class="item type7">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/ネコとスプーン.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail03.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -217,8 +188,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/たわし.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail04.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -228,8 +201,10 @@
         <div class="item type6">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/ハンドスピナー.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail05.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -238,8 +213,10 @@
         <div class="item type6">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/モーメント１.JPG" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail06.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -248,8 +225,10 @@
         <div class="item type1">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/猪.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail07.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -258,8 +237,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/釣り具.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail08.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -268,8 +249,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/uranaiFTHG2914_TP_V.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail09.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -278,8 +261,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/電球.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail10.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -288,8 +273,10 @@
         <div class="item type1">
           <figure>
             <a href="./exhibitions_page-1 - コピー.html">
-              <img src="img/item/キャンプ食器.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail11.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">ここに個展タイトルなど</p>
@@ -301,8 +288,10 @@
         <div class="item type2">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/lubitel_1.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail12.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">My camera</p>
@@ -311,8 +300,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/amp.jpeg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail13.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -322,8 +313,10 @@
         <div class="item type7">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/ネコとスプーン.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail14.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -332,8 +325,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/たわし.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail15.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -343,8 +338,10 @@
         <div class="item type6">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/ハンドスピナー.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail06.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -353,8 +350,10 @@
         <div class="item type6">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/モーメント１.JPG" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail16.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -363,8 +362,10 @@
         <div class="item type1">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/猪.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail03.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -373,8 +374,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/釣り具.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail07.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -383,8 +386,10 @@
         <div class="item type9">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/uranaiFTHG2914_TP_V.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail14.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -393,8 +398,10 @@
         <div class="item type9n">
           <figure>
             <a href="./exhibitions_page-1.html">
-              <img src="img/item/電球.jpg" alt="" />
-              <figcaption><h3>いいね数とか取得</h3></figcaption>
+              <img src="img/item/thumbnail15.jpg" alt="" />
+              <figcaption>
+                <h3>いいね数とか取得</h3>
+              </figcaption>
             </a>
           </figure>
           <p class="work-info gallery-info">title</p>
@@ -409,7 +416,7 @@
 
 
 
-    
+
     <!-- javascript -->
     <script src="./js/fadein.js"></script>
 
@@ -417,10 +424,10 @@
     <script src="./js/isotope.pkgd.min.js"></script>
 
     <script>
-      $(function() {
+      $(function () {
         //読み込み完了後0.2秒待ってからisotopeする
         var cnt = 0;
-        var waiting = setInterval(function() {
+        var waiting = setInterval(function () {
           if (cnt == 1) {
             var $container = $("#container");
 
@@ -436,7 +443,7 @@
             });
 
             // jQueryを使って、クリックイベントを追加（以下はフィルター機能）
-            $("#filters").on("click", "button", function() {
+            $("#filters").on("click", "button", function () {
               //クリックしたボタンのdata-filterの値を変数に格納
               var filterValue = $(this).attr("data-filter");
               //ここでオプションのfilterを発動
@@ -453,7 +460,8 @@
         }, 200);
       });
     </script>
-</div>
+  </div>
 
-  </body>
+</body>
+
 </html>
